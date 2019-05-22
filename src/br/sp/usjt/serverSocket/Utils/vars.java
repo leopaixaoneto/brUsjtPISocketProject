@@ -40,6 +40,22 @@ public class vars {
         this.put(404, 5);
     }};
 
-
+    public static final String RELATORIO_TYPE_LINE = "line";
+    public static final String RELATORIO_TYPE_COLUMN = "column";
+    public static final String RELATORIO_TYPE_BAR = "bar";
+    public static final String RELATORIO_TYPE_AREA = "area";
+    public static final String RELATORIO_TYPE_SPLINE = "spline";
+    public static final String RELATORIO_TYPE_SPLINEAREA = "splineArea";
+    public static final String RELATORIO_TYPE_STEPLINE = "stepLine";
+    public static final String RELATORIO_TYPE_SCATTER = "scatter";
+    public static final String RELATORIO_TYPE_BUBBLE = "bubble";
+    public static final String RELATORIO_TYPE_STACKEDCOLUMN = "stackedColumn";
+    public static final String RELATORIO_TYPE_STACKEDBAR = "stackedBar";
+    public static final String RELATORIO_TYPE_STACKEDAREA = "stackedArea";
+    public static final String RELATORIO_TYPE_STACKEDCOLUMN100 = "stackedColumn100";
+    public static final String RELATORIO_TYPE_STACKEDBAR100 = "stackedBar100";
+    public static final String RELATORIO_TYPE_STACKEDAREA100 = "stackedArea100";
+    public static final String RELATORIO_TYPE_PIE = "pie";
+    public static final String RELATORIO_TYPE_DOUGHNUT = "doughnut";
 
 }

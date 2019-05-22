@@ -11,6 +11,7 @@ public class RelatorioGenerate {
     String cabecalho =
             "<!DOCTYPE html>\n" +
             "<html>\n" +
+                    "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"> \n" +
             "  <head>";
 
     public RelatorioGenerate(){
@@ -22,7 +23,7 @@ public class RelatorioGenerate {
             return null;
     }
 
-    public File mount(String nomeRelatorio, Map<Integer, Integer> map){
+    public File mount(String nomeRelatorio, Map<Integer, Integer> map, String relatorioType){
         StringBuffer inputBuffer = new StringBuffer();
 
         String line;
@@ -40,7 +41,7 @@ public class RelatorioGenerate {
                 "          },\n" +
                 "          data: [\n" +
                 "            {\n" +
-                "              type: \"column\",\n" +
+                "              type: \"" + relatorioType + "\",\n" +
                 "              dataPoints: [ \n";
 
         inputBuffer.append(line);

@@ -7,6 +7,7 @@ import br.sp.usjt.serverSocket.Model.RelatorioGenerate;
 import br.sp.usjt.serverSocket.Model.httpRequest;
 import br.sp.usjt.serverSocket.Model.httpResponse;
 import br.sp.usjt.serverSocket.Utils.ServerConfig;
+import br.sp.usjt.serverSocket.Utils.vars;
 import br.sp.usjt.serverSocket.dao.httpResponseDAO;
 
 
@@ -73,7 +74,7 @@ public class ClientHandler implements Runnable {
 
                     RelatorioGenerate gen = new RelatorioGenerate();
 
-                    response = new httpResponse("relatorios.html", 200, gen.mount("Relatorio" , httpresponseDAO.countHttpCodes()));
+                    response = new httpResponse("relatorios.html", 200, gen.mount("Relatorio HTTP Code Responses" , httpresponseDAO.countHttpCodes(), vars.RELATORIO_TYPE_PIE));
                     response.setFile(response.getFile());
 
                 }else{
