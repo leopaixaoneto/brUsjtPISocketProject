@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head><script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script type="text/javascript">
+      window.onload = function() {
+        var chart = new CanvasJS.Chart("chartContainer", {
+          title: {
+            text: "Relatorio"
+          },
+          data: [
+            {
+              type: "column",
+              dataPoints: [ 
+{ label: "HTTP Code: 400", y: 0},
+{ label: "HTTP Code: 403", y: 0},
+{ label: "HTTP Code: 404", y: 16},
+{ label: "HTTP Code: 500", y: 0},
+{ label: "HTTP Code: 200", y: 2}
+]
+            }
+          ]
+        });
+        chart.render();
+      };
+    </script> </head>
+  <body>
+    <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+  </body>
+</html>
