@@ -17,12 +17,6 @@ public class RelatorioGenerate {
     public RelatorioGenerate(){
     }
 
-    public Map<Integer, Integer> contador(){
-
-
-            return null;
-    }
-
     public File mount(String nomeRelatorio, Map<Integer, Integer> map, String relatorioType){
         StringBuffer inputBuffer = new StringBuffer();
 
