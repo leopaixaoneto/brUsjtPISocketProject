@@ -1,15 +1,15 @@
 package br.sp.usjt.serverSocket.dao;
 
-import br.sp.usjt.serverSocket.Utils.vars;
 
 import java.sql.*;
 
-public class simpleDAO {
+public abstract class simpleDAO {
 
     public Connection conexao;
     public String tableName;
 
     public String GET_ALL_QUERY;
+    public String createTableQuery;
 
     public boolean isTableExist(){
         DatabaseMetaData dbm = null;
@@ -23,12 +23,14 @@ public class simpleDAO {
                 return true;
             }
             else {
+                createTable();
                return false;
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
 
+        createTable();
         return false;
     }
 
@@ -37,16 +39,12 @@ public class simpleDAO {
         try {
 
             stmt = conexao.createStatement();
-            stmt.execute(getTableQuery());
+            stmt.execute(createTableQuery);
             return true;
         } catch (SQLException e) {
             e.printStackTrace();
             return false;
         }
-    }
-
-    private String getTableQuery(){
-        return vars.CREATE_TABLE_QUERY.get(this.getClass().getSimpleName());
     }
 
     public void startQueryList(){

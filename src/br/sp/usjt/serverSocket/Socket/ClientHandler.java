@@ -74,7 +74,7 @@ public class ClientHandler implements Runnable {
 
                     RelatorioGenerate gen = new RelatorioGenerate();
 
-                    response = new httpResponse("relatorios.html", 200, gen.mount("Relatorio HTTP Code Responses" , httpresponseDAO.countHttpCodes(), vars.RELATORIO_TYPE_BAR));
+                    response = new httpResponse("relatorios.html", 200, gen.mount("Relatorio HTTP Code Responses" , httpresponseDAO.countHttpCodes(), vars.RELATORIO_TYPE_DOUGHNUT));
                     response.setFile(response.getFile());
 
                 }else{

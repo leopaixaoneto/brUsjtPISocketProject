@@ -28,9 +28,11 @@ public class httpResponseDAO extends simpleDAO {
             e.printStackTrace();
         }
 
+        this.createTableQuery = vars.CREATE_TABLE_QUERY.get("httpResponse");
+
         this.tableName = httpResponse.class.getSimpleName();
 
-        startQueryList();
+        isTableExist();
 
     }
 
