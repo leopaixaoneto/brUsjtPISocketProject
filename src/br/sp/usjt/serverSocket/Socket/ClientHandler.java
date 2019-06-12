@@ -9,6 +9,7 @@ import br.sp.usjt.serverSocket.Model.httpResponse;
 import br.sp.usjt.serverSocket.Utils.ServerConfig;
 import br.sp.usjt.serverSocket.Utils.vars;
 import br.sp.usjt.serverSocket.dao.httpResponseDAO;
+import com.google.gson.JsonObject;
 
 
 public class ClientHandler implements Runnable {
@@ -64,6 +65,8 @@ public class ClientHandler implements Runnable {
 
             boolean responseAlreadySended = false;
 
+            JsonObject props = requisicao.getProps();
+
             if (requisicao.getMethod().equals("GET")) {
 
 
@@ -74,8 +77,40 @@ public class ClientHandler implements Runnable {
 
                     RelatorioGenerate gen = new RelatorioGenerate();
 
-                    response = new httpResponse("relatorios.html", 200, gen.mount("Relatorio HTTP Code Responses" , httpresponseDAO.countHttpCodes(), vars.RELATORIO_TYPE_DOUGHNUT));
-                    response.setFile(response.getFile());
+                    String relType = vars.RELATORIO_TYPE_BAR;
+
+                    if(props != null){
+                        if(props.has("type")){
+
+                            System.out.println(props.get("type"));
+
+                            if(props.get("type").toString().replace("\"", "").equals("") || props.get("type").toString().replace("\"", "").equals("line")){
+                                relType = vars.RELATORIO_TYPE_BAR;
+                            }
+
+                            if(props.get("type").toString().replace("\"", "").equals("line")){
+                                relType = vars.RELATORIO_TYPE_LINE;
+                            }
+
+                            if(props.get("type").toString().replace("\"", "").equals("doughnut")){
+                                relType = vars.RELATORIO_TYPE_DOUGHNUT;
+                            }
+
+                            if(props.get("type").toString().replace("\"", "").equals("area")){
+                                relType = vars.RELATORIO_TYPE_AREA;
+                            }
+
+                            if(props.get("type").toString().replace("\"", "").equals("column")){
+                                relType = vars.RELATORIO_TYPE_COLUMN;
+                            }
+
+                            gen.setSelected(props.get("type").toString().replace("\"", ""));
+                        }
+                    }
+
+
+
+                    response = new httpResponse("/relatorios.html", 200, gen.mount("Relatorio HTTP Code Responses" , httpresponseDAO.countHttpCodes(), relType));
 
                 }else{
                     response = new httpResponse((requisicao.getPathFile()), 200);
@@ -96,12 +131,13 @@ public class ClientHandler implements Runnable {
                             System.out.println("404 File Not Found : " + requisicao.getMethod() + " method.");
                         }
                     if(response != null){
-                        response.setHttpCode(404);
+                        response = new httpResponse(ServerConfig.FILE_NOT_FOUND, 404);
+                        response.setFile(new File(requisicao.getPathFile()));
+
                         httpresponseDAO.save(response);
+                        response.send(out, dataOut);
                     }
 
-                        response = new httpResponse(ServerConfig.FILE_NOT_FOUND, 404);
-                        response.send(out, dataOut);
 
                         if (debug) {
                             System.out.println("File " + requisicao.getPathFile() + " not found");

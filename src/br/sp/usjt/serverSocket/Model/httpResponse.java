@@ -62,7 +62,6 @@ public class httpResponse {
         this.httpCode = httpCode;
 
         this.dataResposta = new SimpleDateFormat("dd/MM/yyyy - HH:mm:ss").format(new Date());
-
     }
 
     public void send(PrintWriter out, BufferedOutputStream dataOut) throws IOException{

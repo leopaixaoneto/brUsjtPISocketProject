@@ -67,7 +67,7 @@ public class httpResponseDAO extends simpleDAO {
         try{
             PreparedStatement statement = conexao.prepareStatement("INSERT INTO httpResponse(file, contentType, httpCode, date) VALUES (?,?,?,?)");
 
-
+            System.out.println(response.getFile().getAbsolutePath());
             statement.setString(1, response.getFile().getAbsolutePath().split("\\.",2)[1]);
 
             statement.setString(2,response.getContentType());
@@ -81,6 +81,7 @@ public class httpResponseDAO extends simpleDAO {
 
         }
     }
+
 
     public Map<Integer, Integer> countHttpCodes(){
 

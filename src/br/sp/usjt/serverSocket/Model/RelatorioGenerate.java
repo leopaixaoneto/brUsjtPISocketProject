@@ -8,11 +8,14 @@ import java.util.Map;
 
 public class RelatorioGenerate {
 
+    String selected = "";
+
     String cabecalho =
             "<!DOCTYPE html>\n" +
             "<html>\n" +
                     "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"> \n" +
-            "  <head>";
+            "  <head>" +
+            "<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">";
 
     public RelatorioGenerate(){
     }
@@ -61,9 +64,12 @@ public class RelatorioGenerate {
 
 
         inputBuffer.append(" </head>\n" +
-                "  <body>\n" +
+                "  <body selectedIndex = \"" + selected + "\">\n" +
+                "<div class=\"container\" id=\"mainDiv\"> \n" +
                 "    <div id=\"chartContainer\" style=\"height: 300px; width: 100%;\"></div>\n" +
+                "</div>\n" +
                 "  </body>\n" +
+                "<script type = \"text/javascript\" src = \"/js/relatorios.js\" ></script>\n" +
                 "</html>\n");
 
         FileOutputStream fileOut = null;
@@ -81,7 +87,12 @@ public class RelatorioGenerate {
 
         }
 
+
         return result;
 
+    }
+
+    public void setSelected(String selected) {
+        this.selected = selected;
     }
 }
