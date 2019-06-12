@@ -1,10 +1,75 @@
 <!DOCTYPE html>
-<html>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
-  <head><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"><script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<html lang="en">
+  <head>
+    <title>Colorlib Balita &mdash; Minimal Blog Template</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans:300, 400,700"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="http://localhost:8080/css/style.css">
+
+  </head>
+  <body>
+    <header role="banner">
+      <div class="top-bar">
+        <div class="container"></div>
+      </div>
+
+      <div class="container logo-wrap">
+        <div class="row pt-5">
+          <div class="col-12 text-center">
+            <h1 class="site-logo"><a href="relatorios.html">RELATÓRIOS</a></h1>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- END header -->
+
+    <section class="site-section py-sm">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2 class="mb-4">Relatórios</h2>
+          </div>
+        </div>
+        <div class="row blog-entries">
+          <div class="main-content">
+            <div class="row">
+              <!-- INSERIR AQUI OS GRÁFICOS --><div class="col-md-6">
+                <a href="relatorios.html" class="blog-entry element-animate" data-animate-effect="fadeIn">
+                  <div class="blog-content-body">
+                    <div class="post-meta">
+                      <span class="category">Relatorio</span>
+                      <span class="mr-2"><script>
+                                document.write(new Date().getDay() + "/");
+                                document.write(new Date().getMonth() + "/");
+                                document.write(new Date().getFullYear());
+                              </script></span> &bullet;
+                    </div>
+                    <h2>Relatorio TEXTO AEHO 12312312321321</h2>
+    <div id="chartContainer1" style="height: 300px; width: 100%;"></div>
+                  </div>
+                </a>
+            </div>
     <script type="text/javascript">
-      window.onload = function() {
-        var chart = new CanvasJS.Chart("chartContainer", {
+      window.addEventListener('load', function() {
+        var chartContainer1 = new CanvasJS.Chart("chartContainer1", {
           title: {
             text: "Relatorio HTTP Code Responses"
           },
@@ -13,21 +78,448 @@
               type: "bar",
               dataPoints: [ 
 { label: "HTTP Code: 400", y: 0},
+{ label: "HTTP Code: 0", y: 22},
+{ label: "HTTP Code: 1", y: 12},
 { label: "HTTP Code: 403", y: 0},
-{ label: "HTTP Code: 404", y: 88},
+{ label: "HTTP Code: 404", y: 16},
 { label: "HTTP Code: 500", y: 0},
-{ label: "HTTP Code: 200", y: 242}
+{ label: "HTTP Code: 200", y: 105}
 ]
             }
           ]
         });
-        chart.render();
-      };
-    </script> </head>
-  <body selectedIndex = "bar">
-<div class="container" id="mainDiv"> 
-    <div id="chartContainer" style="height: 300px; width: 100%;"></div>
-</div>
+        chartContainer1.render();
+});
+    </script><div class="col-md-6">
+                <a href="relatorios.html" class="blog-entry element-animate" data-animate-effect="fadeIn">
+                  <div class="blog-content-body">
+                    <div class="post-meta">
+                      <span class="category">Relatorio</span>
+                      <span class="mr-2"><script>
+                                document.write(new Date().getDay() + "/");
+                                document.write(new Date().getMonth() + "/");
+                                document.write(new Date().getFullYear());
+                              </script></span> &bullet;
+                    </div>
+                    <h2>Relatorio TEXTO AEHO 12312312321321</h2>
+    <div id="chartContainer2" style="height: 300px; width: 100%;"></div>
+                  </div>
+                </a>
+            </div>
+    <script type="text/javascript">
+      window.addEventListener('load', function() {
+        var chartContainer2 = new CanvasJS.Chart("chartContainer2", {
+          title: {
+            text: "Relatorio HTTP Code Responses2"
+          },
+          data: [
+            {
+              type: "bar",
+              dataPoints: [ 
+{ label: "HTTP Code: 400", y: 0},
+{ label: "HTTP Code: 0", y: 22},
+{ label: "HTTP Code: 1", y: 12},
+{ label: "HTTP Code: 403", y: 0},
+{ label: "HTTP Code: 404", y: 16},
+{ label: "HTTP Code: 500", y: 0},
+{ label: "HTTP Code: 200", y: 105}
+]
+            }
+          ]
+        });
+        chartContainer2.render();
+});
+    </script><div class="col-md-6">
+                <a href="relatorios.html" class="blog-entry element-animate" data-animate-effect="fadeIn">
+                  <div class="blog-content-body">
+                    <div class="post-meta">
+                      <span class="category">Relatorio</span>
+                      <span class="mr-2"><script>
+                                document.write(new Date().getDay() + "/");
+                                document.write(new Date().getMonth() + "/");
+                                document.write(new Date().getFullYear());
+                              </script></span> &bullet;
+                    </div>
+                    <h2>Relatorio TEXTO AEHO 12312312321321</h2>
+    <div id="chartContainer3" style="height: 300px; width: 100%;"></div>
+                  </div>
+                </a>
+            </div>
+    <script type="text/javascript">
+      window.addEventListener('load', function() {
+        var chartContainer3 = new CanvasJS.Chart("chartContainer3", {
+          title: {
+            text: "Relatorio HTTP Code Responses3"
+          },
+          data: [
+            {
+              type: "bar",
+              dataPoints: [ 
+{ label: "HTTP Code: 400", y: 0},
+{ label: "HTTP Code: 0", y: 22},
+{ label: "HTTP Code: 1", y: 12},
+{ label: "HTTP Code: 403", y: 0},
+{ label: "HTTP Code: 404", y: 16},
+{ label: "HTTP Code: 500", y: 0},
+{ label: "HTTP Code: 200", y: 105}
+]
+            }
+          ]
+        });
+        chartContainer3.render();
+});
+    </script><div class="col-md-6">
+                <a href="relatorios.html" class="blog-entry element-animate" data-animate-effect="fadeIn">
+                  <div class="blog-content-body">
+                    <div class="post-meta">
+                      <span class="category">Relatorio</span>
+                      <span class="mr-2"><script>
+                                document.write(new Date().getDay() + "/");
+                                document.write(new Date().getMonth() + "/");
+                                document.write(new Date().getFullYear());
+                              </script></span> &bullet;
+                    </div>
+                    <h2>Relatorio TEXTO AEHO 12312312321321</h2>
+    <div id="chartContainer4" style="height: 300px; width: 100%;"></div>
+                  </div>
+                </a>
+            </div>
+    <script type="text/javascript">
+      window.addEventListener('load', function() {
+        var chartContainer4 = new CanvasJS.Chart("chartContainer4", {
+          title: {
+            text: "Relatorio HTTP Code Responses4"
+          },
+          data: [
+            {
+              type: "bar",
+              dataPoints: [ 
+{ label: "HTTP Code: 400", y: 0},
+{ label: "HTTP Code: 0", y: 22},
+{ label: "HTTP Code: 1", y: 12},
+{ label: "HTTP Code: 403", y: 0},
+{ label: "HTTP Code: 404", y: 16},
+{ label: "HTTP Code: 500", y: 0},
+{ label: "HTTP Code: 200", y: 105}
+]
+            }
+          ]
+        });
+        chartContainer4.render();
+});
+    </script><div class="col-md-6">
+                <a href="relatorios.html" class="blog-entry element-animate" data-animate-effect="fadeIn">
+                  <div class="blog-content-body">
+                    <div class="post-meta">
+                      <span class="category">Relatorio</span>
+                      <span class="mr-2"><script>
+                                document.write(new Date().getDay() + "/");
+                                document.write(new Date().getMonth() + "/");
+                                document.write(new Date().getFullYear());
+                              </script></span> &bullet;
+                    </div>
+                    <h2>Relatorio TEXTO AEHO 12312312321321</h2>
+    <div id="chartContainer5" style="height: 300px; width: 100%;"></div>
+                  </div>
+                </a>
+            </div>
+    <script type="text/javascript">
+      window.addEventListener('load', function() {
+        var chartContainer5 = new CanvasJS.Chart("chartContainer5", {
+          title: {
+            text: "Relatorio HTTP Code Responses5"
+          },
+          data: [
+            {
+              type: "bar",
+              dataPoints: [ 
+{ label: "HTTP Code: 400", y: 0},
+{ label: "HTTP Code: 0", y: 22},
+{ label: "HTTP Code: 1", y: 12},
+{ label: "HTTP Code: 403", y: 0},
+{ label: "HTTP Code: 404", y: 16},
+{ label: "HTTP Code: 500", y: 0},
+{ label: "HTTP Code: 200", y: 105}
+]
+            }
+          ]
+        });
+        chartContainer5.render();
+});
+    </script><div class="col-md-6">
+                <a href="relatorios.html" class="blog-entry element-animate" data-animate-effect="fadeIn">
+                  <div class="blog-content-body">
+                    <div class="post-meta">
+                      <span class="category">Relatorio</span>
+                      <span class="mr-2"><script>
+                                document.write(new Date().getDay() + "/");
+                                document.write(new Date().getMonth() + "/");
+                                document.write(new Date().getFullYear());
+                              </script></span> &bullet;
+                    </div>
+                    <h2>Relatorio TEXTO AEHO 12312312321321</h2>
+    <div id="chartContainer6" style="height: 300px; width: 100%;"></div>
+                  </div>
+                </a>
+            </div>
+    <script type="text/javascript">
+      window.addEventListener('load', function() {
+        var chartContainer6 = new CanvasJS.Chart("chartContainer6", {
+          title: {
+            text: "Relatorio HTTP Code Responses6"
+          },
+          data: [
+            {
+              type: "bar",
+              dataPoints: [ 
+{ label: "HTTP Code: 400", y: 0},
+{ label: "HTTP Code: 0", y: 22},
+{ label: "HTTP Code: 1", y: 12},
+{ label: "HTTP Code: 403", y: 0},
+{ label: "HTTP Code: 404", y: 16},
+{ label: "HTTP Code: 500", y: 0},
+{ label: "HTTP Code: 200", y: 105}
+]
+            }
+          ]
+        });
+        chartContainer6.render();
+});
+    </script><div class="col-md-6">
+                <a href="relatorios.html" class="blog-entry element-animate" data-animate-effect="fadeIn">
+                  <div class="blog-content-body">
+                    <div class="post-meta">
+                      <span class="category">Relatorio</span>
+                      <span class="mr-2"><script>
+                                document.write(new Date().getDay() + "/");
+                                document.write(new Date().getMonth() + "/");
+                                document.write(new Date().getFullYear());
+                              </script></span> &bullet;
+                    </div>
+                    <h2>Relatorio TEXTO AEHO 12312312321321</h2>
+    <div id="chartContainer7" style="height: 300px; width: 100%;"></div>
+                  </div>
+                </a>
+            </div>
+    <script type="text/javascript">
+      window.addEventListener('load', function() {
+        var chartContainer7 = new CanvasJS.Chart("chartContainer7", {
+          title: {
+            text: "Relatorio HTTP Code Responses6"
+          },
+          data: [
+            {
+              type: "bar",
+              dataPoints: [ 
+{ label: "HTTP Code: 400", y: 0},
+{ label: "HTTP Code: 0", y: 22},
+{ label: "HTTP Code: 1", y: 12},
+{ label: "HTTP Code: 403", y: 0},
+{ label: "HTTP Code: 404", y: 16},
+{ label: "HTTP Code: 500", y: 0},
+{ label: "HTTP Code: 200", y: 105}
+]
+            }
+          ]
+        });
+        chartContainer7.render();
+});
+    </script><div class="col-md-6">
+                <a href="relatorios.html" class="blog-entry element-animate" data-animate-effect="fadeIn">
+                  <div class="blog-content-body">
+                    <div class="post-meta">
+                      <span class="category">Relatorio</span>
+                      <span class="mr-2"><script>
+                                document.write(new Date().getDay() + "/");
+                                document.write(new Date().getMonth() + "/");
+                                document.write(new Date().getFullYear());
+                              </script></span> &bullet;
+                    </div>
+                    <h2>Relatorio TEXTO AEHO 12312312321321</h2>
+    <div id="chartContainer8" style="height: 300px; width: 100%;"></div>
+                  </div>
+                </a>
+            </div>
+    <script type="text/javascript">
+      window.addEventListener('load', function() {
+        var chartContainer8 = new CanvasJS.Chart("chartContainer8", {
+          title: {
+            text: "Relatorio HTTP Code Responses6"
+          },
+          data: [
+            {
+              type: "bar",
+              dataPoints: [ 
+{ label: "HTTP Code: 400", y: 0},
+{ label: "HTTP Code: 0", y: 22},
+{ label: "HTTP Code: 1", y: 12},
+{ label: "HTTP Code: 403", y: 0},
+{ label: "HTTP Code: 404", y: 16},
+{ label: "HTTP Code: 500", y: 0},
+{ label: "HTTP Code: 200", y: 105}
+]
+            }
+          ]
+        });
+        chartContainer8.render();
+});
+    </script><div class="col-md-6">
+                <a href="relatorios.html" class="blog-entry element-animate" data-animate-effect="fadeIn">
+                  <div class="blog-content-body">
+                    <div class="post-meta">
+                      <span class="category">Relatorio</span>
+                      <span class="mr-2"><script>
+                                document.write(new Date().getDay() + "/");
+                                document.write(new Date().getMonth() + "/");
+                                document.write(new Date().getFullYear());
+                              </script></span> &bullet;
+                    </div>
+                    <h2>Relatorio TEXTO AEHO 12312312321321</h2>
+    <div id="chartContainer9" style="height: 300px; width: 100%;"></div>
+                  </div>
+                </a>
+            </div>
+    <script type="text/javascript">
+      window.addEventListener('load', function() {
+        var chartContainer9 = new CanvasJS.Chart("chartContainer9", {
+          title: {
+            text: "Relatorio HTTP Code Responses6"
+          },
+          data: [
+            {
+              type: "bar",
+              dataPoints: [ 
+{ label: "HTTP Code: 400", y: 0},
+{ label: "HTTP Code: 0", y: 22},
+{ label: "HTTP Code: 1", y: 12},
+{ label: "HTTP Code: 403", y: 0},
+{ label: "HTTP Code: 404", y: 16},
+{ label: "HTTP Code: 500", y: 0},
+{ label: "HTTP Code: 200", y: 105}
+]
+            }
+          ]
+        });
+        chartContainer9.render();
+});
+    </script><div class="col-md-6">
+                <a href="relatorios.html" class="blog-entry element-animate" data-animate-effect="fadeIn">
+                  <div class="blog-content-body">
+                    <div class="post-meta">
+                      <span class="category">Relatorio</span>
+                      <span class="mr-2"><script>
+                                document.write(new Date().getDay() + "/");
+                                document.write(new Date().getMonth() + "/");
+                                document.write(new Date().getFullYear());
+                              </script></span> &bullet;
+                    </div>
+                    <h2>Relatorio TEXTO AEHO 12312312321321</h2>
+    <div id="chartContainer10" style="height: 300px; width: 100%;"></div>
+                  </div>
+                </a>
+            </div>
+    <script type="text/javascript">
+      window.addEventListener('load', function() {
+        var chartContainer10 = new CanvasJS.Chart("chartContainer10", {
+          title: {
+            text: "Relatorio HTTP Code Responses6"
+          },
+          data: [
+            {
+              type: "bar",
+              dataPoints: [ 
+{ label: "HTTP Code: 400", y: 0},
+{ label: "HTTP Code: 0", y: 22},
+{ label: "HTTP Code: 1", y: 12},
+{ label: "HTTP Code: 403", y: 0},
+{ label: "HTTP Code: 404", y: 16},
+{ label: "HTTP Code: 500", y: 0},
+{ label: "HTTP Code: 200", y: 105}
+]
+            }
+          ]
+        });
+        chartContainer10.render();
+});
+    </script>
+              <!-- FIM GRÁFICOS-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-4">
+            <h3>Créditos</h3>
+            <p>
+              <img
+                src="images/sjtLogo.png"
+                alt="Image placeholder"
+                class="img-fluid"
+              />
+            </p>
+
+            <p>
+              Integrantes: <br />
+              Leonardo Paixão Viana - 8162258712 <br />
+              Kaio Vinicius Diniz - 816118179 <br />
+              Pedro Augusto Cabral Rocha - 81614082 <br />
+              Rafaela Santos Pacheco - 201506209 <br />
+              Bruno Felix - 81610370 <br />
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            Trabalho Projeto Interdisciplinar | Trabalho feito com o
+            <i class="fa fa-heart-o" aria-hidden="true"></i> para faculdade
+            <a href="https://www.usjt.br/" target="_blank">São Judas!</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END footer -->
+
+    <!-- loader -->
+    <div id="loader" class="show fullscreen">
+      <svg class="circular" width="48px" height="48px">
+        <circle
+          class="path-bg"
+          cx="24"
+          cy="24"
+          r="22"
+          fill="none"
+          stroke-width="4"
+          stroke="#eeeeee"
+        />
+        <circle
+          class="path"
+          cx="24"
+          cy="24"
+          r="22"
+          fill="none"
+          stroke-width="4"
+          stroke-miterlimit="10"
+          stroke="#f4b214"
+        />
+      </svg>
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="http://localhost:8080/js/jquery-migrate-3.0.0.js"></script>
+    <script src="http://localhost:8080/js/owl.carousel.min.js"></script>
+    <script src="http://localhost:8080/js/jquery.waypoints.min.js"></script>
+    <script src="http://localhost:8080/js/jquery.stellar.min.js"></script>
+    <script src="http://localhost:8080/js/main.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
   </body>
-<script type = "text/javascript" src = "/js/relatorios.js" ></script>
 </html>

@@ -1,59 +1,180 @@
 package br.sp.usjt.serverSocket.View;
 
+import br.sp.usjt.serverSocket.Model.httpResponse;
 import br.sp.usjt.serverSocket.Socket.Servidor;
+import br.sp.usjt.serverSocket.dao.httpResponseDAO;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
 
-public class ServerFrame extends JFrame {
 
-    private Thread serverThread;
-    private Servidor server;
+/**
+ *
+ * @author leopa
+ */
+public class ServerFrame extends javax.swing.JFrame {
 
-    private Button iniciar,pausar;
+    public ServerFrame(Servidor server) {
 
-    public ServerFrame(Servidor server){
         this.server = server;
 
-        this.setTitle("Servidor");
-        this.setLocationRelativeTo(null);
+        httpresponseDAO = new httpResponseDAO();
 
-        this.setSize(200,100);
-        this.setResizable(false);
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        try {
+//            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+//                if ("Nimbus".equals(info.getName())) {
+//                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+//                    break;
+//                }
+//            }
+            UIManager.setLookAndFeel(
+                    UIManager.getSystemLookAndFeelClassName());
 
-        this.setLayout(new GridLayout(1, 2));
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(ServerFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(ServerFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(ServerFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(ServerFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
 
-        iniciar = new Button();
-        iniciar.setLabel("Iniciar");
-        iniciar.addActionListener(new ActionListener() {
+        initComponents();
+    }
+
+    @SuppressWarnings("unchecked")
+
+    private void initComponents() {
+
+        jPanel1 = new javax.swing.JPanel();
+        TituloLabel = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        jLabelStatus = new javax.swing.JLabel();
+        jButtonIniciar = new javax.swing.JButton();
+        jButtonParar = new javax.swing.JButton();
+        jButtonReiniciar = new javax.swing.JButton();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
+
+        TituloLabel.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        TituloLabel.setText("Servidor Web");
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel1.setText("Status: ");
+
+        jLabel2.setText("Eventos");
+
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jScrollPane1.setViewportView(jTextArea1);
+
+        jLabelStatus.setForeground(new java.awt.Color(255, 0, 0));
+        jLabelStatus.setText("INATIVO");
+        jLabelStatus.setToolTipText("");
+
+        jButtonIniciar.setText("Iniciar");
+        jButtonIniciar.addActionListener(new ActionListener() {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(ActionEvent actionEvent) {
                 ligar();
-                iniciar.setEnabled(false);
-                pausar.setEnabled(true);
             }
         });
 
-        pausar = new Button();
-        pausar.setLabel("Pausar");
-        pausar.addActionListener(new ActionListener() {
+
+        jButtonParar.setText("Parar");
+        jButtonParar.addActionListener(new ActionListener() {
             @Override
-            public void actionPerformed(ActionEvent e) {
-                pausar.setEnabled(false);
-                iniciar.setEnabled(true);
+            public void actionPerformed(ActionEvent actionEvent) {
                 desligar();
             }
         });
 
-        pausar.setEnabled(false);
 
-        this.add(iniciar);
-        this.add(pausar);
+        jButtonReiniciar.setText("Reiniciar");
+        jButtonReiniciar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                desligar();
 
-        this.setVisible(true);
+
+                try{
+                    Thread.sleep(1000);
+                }catch (InterruptedException ex){
+
+                }
+
+                ligar();
+            }
+        });
+
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+                jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addGap(22, 22, 22)
+                                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 356, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                                                .addComponent(jButtonIniciar, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                                .addComponent(jButtonParar, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addGap(18, 18, 18)
+                                                                .addComponent(jButtonReiniciar, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                        .addGroup(jPanel1Layout.createSequentialGroup()
+                                                                .addComponent(jLabel2)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                                .addComponent(jLabelStatus))))
+                                        .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addGap(128, 128, 128)
+                                                .addComponent(TituloLabel)))
+                                .addContainerGap(22, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+                jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(7, 7, 7)
+                                .addComponent(TituloLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(jLabel2)
+                                        .addComponent(jLabelStatus))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(jButtonParar)
+                                        .addComponent(jButtonIniciar)
+                                        .addComponent(jButtonReiniciar))
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        layout.setVerticalGroup(
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        pack();
+
+        this.setLocationRelativeTo(null);
+        jTextArea1.setEditable(false);
     }
 
     private void ligar(){
@@ -64,11 +185,60 @@ public class ServerFrame extends JFrame {
         serverThread.start();
 
 
+        jLabelStatus.setText("ATIVO");
+        jLabelStatus.setForeground(Color.GREEN);
+
+        jButtonParar.setEnabled(true);
+        jButtonIniciar.setEnabled(false);
+        jButtonReiniciar.setEnabled(true);
+
+        httpresponseDAO.saveServerEntry(httpResponseDAO.ENTRY_TYPE_START);
+
+        preencherTextArea();
+
     }
 
     private void desligar(){
         //Desligando servidor / desligando a thread
         System.out.println("pausando");
         server.pause();
+
+        jLabelStatus.setText("INATIVO");
+        jLabelStatus.setForeground(Color.RED);
+        jButtonParar.setEnabled(false);
+        jButtonIniciar.setEnabled(true);
+        jButtonReiniciar.setEnabled(false);
+
+
+        httpresponseDAO.saveServerEntry(httpResponseDAO.ENTRY_TYPE_STOP);
+
+        preencherTextArea();
+
     }
+
+    public void preencherTextArea(){
+        jTextArea1.setText("");
+        for(httpResponse response : httpresponseDAO.getAll()){
+            jTextArea1.setText(jTextArea1.getText() + " \n\n-" +  response.getFile().getName() + " " + response.getHttpCode() + " : " + response.getDataResposta());
+        }
+    }
+
+    private Thread serverThread;
+    private Servidor server;
+
+    private httpResponseDAO httpresponseDAO;
+
+    private javax.swing.JLabel TituloLabel;
+    private javax.swing.JButton jButtonIniciar;
+    private javax.swing.JButton jButtonParar;
+    private javax.swing.JButton jButtonReiniciar;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabelStatus;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea jTextArea1;
+
+
 }
+

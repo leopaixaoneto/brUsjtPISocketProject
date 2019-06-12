@@ -2,7 +2,10 @@ package br.sp.usjt.serverSocket.Socket;
 
 import java.io.*;
 import java.net.Socket;
+import java.util.ArrayList;
+import java.util.List;
 
+import br.sp.usjt.serverSocket.Model.Relatorio;
 import br.sp.usjt.serverSocket.Model.RelatorioGenerate;
 import br.sp.usjt.serverSocket.Model.httpRequest;
 import br.sp.usjt.serverSocket.Model.httpResponse;
@@ -10,6 +13,7 @@ import br.sp.usjt.serverSocket.Utils.ServerConfig;
 import br.sp.usjt.serverSocket.Utils.vars;
 import br.sp.usjt.serverSocket.dao.httpResponseDAO;
 import com.google.gson.JsonObject;
+import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 
 
 public class ClientHandler implements Runnable {
@@ -109,8 +113,23 @@ public class ClientHandler implements Runnable {
                     }
 
 
+                    List<Relatorio> relatorioList = new ArrayList();
 
-                    response = new httpResponse("/relatorios.html", 200, gen.mount("Relatorio HTTP Code Responses" , httpresponseDAO.countHttpCodes(), relType));
+                    relatorioList.add(new Relatorio(httpresponseDAO.countHttpCodes(),"Relatorio HTTP Code Responses" , relType, "Relatorio TEXTO AEHO 12312312321321","Relatorio", "chartContainer1"));
+                    relatorioList.add(new Relatorio(httpresponseDAO.countHttpCodes(),"Relatorio HTTP Code Responses2" , relType, "Relatorio TEXTO AEHO 12312312321321","Relatorio", "chartContainer2"));
+                    relatorioList.add(new Relatorio(httpresponseDAO.countHttpCodes(),"Relatorio HTTP Code Responses3" , relType, "Relatorio TEXTO AEHO 12312312321321","Relatorio", "chartContainer3"));
+                    relatorioList.add(new Relatorio(httpresponseDAO.countHttpCodes(),"Relatorio HTTP Code Responses4" , relType, "Relatorio TEXTO AEHO 12312312321321","Relatorio", "chartContainer4"));
+                    relatorioList.add(new Relatorio(httpresponseDAO.countHttpCodes(),"Relatorio HTTP Code Responses5" , relType, "Relatorio TEXTO AEHO 12312312321321","Relatorio", "chartContainer5"));
+                    relatorioList.add(new Relatorio(httpresponseDAO.countHttpCodes(),"Relatorio HTTP Code Responses6" , relType, "Relatorio TEXTO AEHO 12312312321321","Relatorio", "chartContainer6"));
+                    relatorioList.add(new Relatorio(httpresponseDAO.countHttpCodes(),"Relatorio HTTP Code Responses6" , relType, "Relatorio TEXTO AEHO 12312312321321","Relatorio", "chartContainer7"));
+                    relatorioList.add(new Relatorio(httpresponseDAO.countHttpCodes(),"Relatorio HTTP Code Responses6" , relType, "Relatorio TEXTO AEHO 12312312321321","Relatorio", "chartContainer8"));
+                    relatorioList.add(new Relatorio(httpresponseDAO.countHttpCodes(),"Relatorio HTTP Code Responses6" , relType, "Relatorio TEXTO AEHO 12312312321321","Relatorio", "chartContainer9"));
+                    relatorioList.add(new Relatorio(httpresponseDAO.countHttpCodes(),"Relatorio HTTP Code Responses6" , relType, "Relatorio TEXTO AEHO 12312312321321","Relatorio", "chartContainer10"));
+
+                    gen.mount(relatorioList);
+
+                    response = new httpResponse("relatorios.html", 200);
+
 
                 }else{
                     response = new httpResponse((requisicao.getPathFile()), 200);
@@ -130,18 +149,18 @@ public class ClientHandler implements Runnable {
                         if (debug) {
                             System.out.println("404 File Not Found : " + requisicao.getMethod() + " method.");
                         }
-                    if(response != null){
-                        response = new httpResponse(ServerConfig.FILE_NOT_FOUND, 404);
-                        response.setFile(new File(requisicao.getPathFile()));
 
+                    if(response != null){
+
+                        response.setHttpCode(404);
                         httpresponseDAO.save(response);
+                        responseAlreadySended = true;
+
+                        response = new httpResponse(ServerConfig.FILE_NOT_FOUND, 404);
+                        //response.setFile(new File(requisicao.getPathFile()));
+
                         response.send(out, dataOut);
                     }
-
-
-                        if (debug) {
-                            System.out.println("File " + requisicao.getPathFile() + " not found");
-                        }
                 }
 
             }else if (requisicao.getMethod().equals("POST")) {

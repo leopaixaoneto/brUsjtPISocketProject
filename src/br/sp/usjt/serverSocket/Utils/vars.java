@@ -12,6 +12,8 @@ public class vars {
         this.put(403, "Forbidden");
         this.put(404,"Not Found");
         this.put(500, "Internal Server Error");
+        this.put(0, "Server Started");
+        this.put(1,"Server Stopped");
     }};
 
     //Mapa de tipos de arquivo e seus respectivos content type
@@ -20,6 +22,8 @@ public class vars {
         this.put(".html", "text/html");
         this.put(".jpg", "image/jpeg");
         this.put(".jpeg", "image/jpeg");
+        this.put(".css", "text/css");
+        this.put(".js", "text/javascript");
     }};
 
     public static final Map<String, String> CREATE_TABLE_QUERY = new HashMap<String, String>(){{
@@ -33,11 +37,6 @@ public class vars {
                 ")" +
                 "COLLATE='latin1_swedish_ci';");
 
-    }};
-
-    public static final Map<Integer, Integer> TEST_RELATORIO = new HashMap<Integer, Integer>(){{
-        this.put(200, 20);
-        this.put(404, 5);
     }};
 
     public static final String RELATORIO_TYPE_LINE = "line";

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+  <head><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"><script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script type="text/javascript">
+      window.onload = function() {
+        var chart = new CanvasJS.Chart("chartContainer", {
+          title: {
+            text: "Relatorio HTTP Code Responses"
+          },
+          data: [
+            {
+              type: "bar",
+              dataPoints: [ 
+{ label: "HTTP Code: 400", y: 0},
+{ label: "HTTP Code: 403", y: 0},
+{ label: "HTTP Code: 404", y: 88},
+{ label: "HTTP Code: 500", y: 0},
+{ label: "HTTP Code: 200", y: 242}
+]
+            }
+          ]
+        });
+        chart.render();
+      };
+    </script> </head>
+  <body selectedIndex = "bar">
+<div class="container" id="mainDiv"> 
+    <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+</div>
+  </body>
+<script type = "text/javascript" src = "/js/relatorios.js" ></script>
+</html>

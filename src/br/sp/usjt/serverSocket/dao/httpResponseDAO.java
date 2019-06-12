@@ -4,16 +4,16 @@ import br.sp.usjt.serverSocket.Model.httpResponse;
 import br.sp.usjt.serverSocket.Utils.vars;
 
 import java.io.File;
-import java.io.IOException;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 public class httpResponseDAO extends simpleDAO {
+
+    public static final String ENTRY_TYPE_START = "Servidor Iniciado";
+    public static final String ENTRY_TYPE_STOP = "Servidor finalizado";
 
     public httpResponseDAO()  {
 
@@ -32,6 +32,7 @@ public class httpResponseDAO extends simpleDAO {
 
         this.tableName = httpResponse.class.getSimpleName();
 
+        startQueryList();
         isTableExist();
 
     }
@@ -73,6 +74,33 @@ public class httpResponseDAO extends simpleDAO {
             statement.setString(2,response.getContentType());
             statement.setInt(3,response.getHttpCode());
             statement.setString(4, response.getDataResposta());
+
+            statement.execute();
+            statement.close();
+
+        }catch(SQLException ex){
+
+        }
+    }
+
+
+
+    public void saveServerEntry(String ENTRY_TYPE){
+
+        try{
+            PreparedStatement statement = conexao.prepareStatement("INSERT INTO httpResponse(file, contentType, httpCode, date) VALUES (?,?,?,?)");
+
+            statement.setString(1, ENTRY_TYPE);
+
+            statement.setString(2,"server/stateChange");
+
+            if(ENTRY_TYPE == ENTRY_TYPE_START){
+                statement.setInt(3,0);
+            }else{
+                statement.setInt(3,1);
+            }
+
+            statement.setString(4, new SimpleDateFormat("dd/MM/yyyy - HH:mm:ss").format(new Date()));
 
             statement.execute();
             statement.close();

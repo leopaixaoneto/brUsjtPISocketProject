@@ -7,13 +7,11 @@ public class Main {
 
 	public static void main(String[] args) {
 
-
-
             //Instanciando servidor
 			Servidor server = new Servidor();
 
             ServerFrame frame = new ServerFrame(server);
-
+            frame.setVisible(true);
     }
 
 }

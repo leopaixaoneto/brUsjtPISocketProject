@@ -48,22 +48,6 @@ public class httpResponse {
 
     }
 
-    public httpResponse(String filePath, int httpCode, File file){
-        this.file = file;
-
-        String[] extensionHelper = filePath.split("\\.");
-        if(extensionHelper.length > 1) {
-            this.contentType = vars.MIME_CODE_MEANING.get(".".concat(extensionHelper[1]));
-        }else{
-            this.contentType = "text/html";
-        }
-
-        this.contentLength = (int) file.length();
-        this.httpCode = httpCode;
-
-        this.dataResposta = new SimpleDateFormat("dd/MM/yyyy - HH:mm:ss").format(new Date());
-    }
-
     public void send(PrintWriter out, BufferedOutputStream dataOut) throws IOException{
         if(!file.exists()) {
             throw new FileNotFoundException();
