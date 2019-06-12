@@ -5,8 +5,7 @@
     
     
     var div = document.getElementById("mainDiv");
-    div.style.backgroundColor = "gray";
-    
+
     var comboBoxTitle = document.createElement("span");
     comboBoxTitle.innerHTML = "Selecione o tipo de gráfico:\n";
 

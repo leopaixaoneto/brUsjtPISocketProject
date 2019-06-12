@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="http://localhost:8080/css/style.css">
 
   </head>
-  <body>
+  <body selectedIndex = "bar">
     <header role="banner">
       <div class="top-bar">
         <div class="container"></div>
@@ -42,7 +42,7 @@
     <!-- END header -->
 
     <section class="site-section py-sm">
-      <div class="container">
+      <div class="container" id="mainDiv">
         <div class="row">
           <div class="col-md-6">
             <h2 class="mb-4">Relatórios</h2>
@@ -62,7 +62,7 @@
                                 document.write(new Date().getFullYear());
                               </script></span> &bullet;
                     </div>
-                    <h2>Relatorio TEXTO AEHO 12312312321321</h2>
+                    <h2>Relatório referente as recorrências de HTTP CODES nas respostas efetuadas aos usuários</h2>
     <div id="chartContainer1" style="height: 300px; width: 100%;"></div>
                   </div>
                 </a>
@@ -77,13 +77,13 @@
             {
               type: "bar",
               dataPoints: [ 
-{ label: "HTTP Code: 400", y: 0},
-{ label: "HTTP Code: 0", y: 22},
-{ label: "HTTP Code: 1", y: 12},
-{ label: "HTTP Code: 403", y: 0},
-{ label: "HTTP Code: 404", y: 16},
-{ label: "HTTP Code: 500", y: 0},
-{ label: "HTTP Code: 200", y: 105}
+{ label: "HTTP CODE: 500", y: 0},
+{ label: "HTTP CODE: 400", y: 0},
+{ label: "HTTP CODE: 0", y: 34},
+{ label: "HTTP CODE: 404", y: 17},
+{ label: "HTTP CODE: 1", y: 12},
+{ label: "HTTP CODE: 403", y: 0},
+{ label: "HTTP CODE: 200", y: 268}
 ]
             }
           ]
@@ -101,7 +101,7 @@
                                 document.write(new Date().getFullYear());
                               </script></span> &bullet;
                     </div>
-                    <h2>Relatorio TEXTO AEHO 12312312321321</h2>
+                    <h2>Relatório referente as recorrências de acessos em horas expecificas</h2>
     <div id="chartContainer2" style="height: 300px; width: 100%;"></div>
                   </div>
                 </a>
@@ -110,19 +110,16 @@
       window.addEventListener('load', function() {
         var chartContainer2 = new CanvasJS.Chart("chartContainer2", {
           title: {
-            text: "Relatorio HTTP Code Responses2"
+            text: "Relatorio sobre as Horas mais acessadas"
           },
           data: [
             {
               type: "bar",
               dataPoints: [ 
-{ label: "HTTP Code: 400", y: 0},
-{ label: "HTTP Code: 0", y: 22},
-{ label: "HTTP Code: 1", y: 12},
-{ label: "HTTP Code: 403", y: 0},
-{ label: "HTTP Code: 404", y: 16},
-{ label: "HTTP Code: 500", y: 0},
-{ label: "HTTP Code: 200", y: 105}
+{ label: "22:00", y: 30},
+{ label: "20:00", y: 25},
+{ label: "21:00", y: 60},
+{ label: "19:00", y: 15}
 ]
             }
           ]
@@ -140,7 +137,7 @@
                                 document.write(new Date().getFullYear());
                               </script></span> &bullet;
                     </div>
-                    <h2>Relatorio TEXTO AEHO 12312312321321</h2>
+                    <h2>Relatório referente as recorrências de acessos em dias expecificos</h2>
     <div id="chartContainer3" style="height: 300px; width: 100%;"></div>
                   </div>
                 </a>
@@ -149,19 +146,16 @@
       window.addEventListener('load', function() {
         var chartContainer3 = new CanvasJS.Chart("chartContainer3", {
           title: {
-            text: "Relatorio HTTP Code Responses3"
+            text: "Relatorio sobre os Dias mais acessados"
           },
           data: [
             {
               type: "bar",
               dataPoints: [ 
-{ label: "HTTP Code: 400", y: 0},
-{ label: "HTTP Code: 0", y: 22},
-{ label: "HTTP Code: 1", y: 12},
-{ label: "HTTP Code: 403", y: 0},
-{ label: "HTTP Code: 404", y: 16},
-{ label: "HTTP Code: 500", y: 0},
-{ label: "HTTP Code: 200", y: 105}
+{ label: "05/06/2019", y: 35},
+{ label: "12/06/2019", y: 50},
+{ label: "22/05/2019", y: 25},
+{ label: "29/05/2019", y: 30}
 ]
             }
           ]
@@ -179,7 +173,7 @@
                                 document.write(new Date().getFullYear());
                               </script></span> &bullet;
                     </div>
-                    <h2>Relatorio TEXTO AEHO 12312312321321</h2>
+                    <h2>Relatório referente as recorrências de acessos em meses expecificos</h2>
     <div id="chartContainer4" style="height: 300px; width: 100%;"></div>
                   </div>
                 </a>
@@ -188,19 +182,15 @@
       window.addEventListener('load', function() {
         var chartContainer4 = new CanvasJS.Chart("chartContainer4", {
           title: {
-            text: "Relatorio HTTP Code Responses4"
+            text: "Relatorio sobre os Meses mais acessados"
           },
           data: [
             {
               type: "bar",
               dataPoints: [ 
-{ label: "HTTP Code: 400", y: 0},
-{ label: "HTTP Code: 0", y: 22},
-{ label: "HTTP Code: 1", y: 12},
-{ label: "HTTP Code: 403", y: 0},
-{ label: "HTTP Code: 404", y: 16},
-{ label: "HTTP Code: 500", y: 0},
-{ label: "HTTP Code: 200", y: 105}
+{ label: "abril", y: 30},
+{ label: "Junho", y: 85},
+{ label: "maio", y: 55}
 ]
             }
           ]
@@ -218,7 +208,7 @@
                                 document.write(new Date().getFullYear());
                               </script></span> &bullet;
                     </div>
-                    <h2>Relatorio TEXTO AEHO 12312312321321</h2>
+                    <h2>"Relatório referente as recorrências de acessos em anos expecificos"</h2>
     <div id="chartContainer5" style="height: 300px; width: 100%;"></div>
                   </div>
                 </a>
@@ -227,19 +217,15 @@
       window.addEventListener('load', function() {
         var chartContainer5 = new CanvasJS.Chart("chartContainer5", {
           title: {
-            text: "Relatorio HTTP Code Responses5"
+            text: "Relatorio sobre os Anos mais acessados"
           },
           data: [
             {
               type: "bar",
               dataPoints: [ 
-{ label: "HTTP Code: 400", y: 0},
-{ label: "HTTP Code: 0", y: 22},
-{ label: "HTTP Code: 1", y: 12},
-{ label: "HTTP Code: 403", y: 0},
-{ label: "HTTP Code: 404", y: 16},
-{ label: "HTTP Code: 500", y: 0},
-{ label: "HTTP Code: 200", y: 105}
+{ label: "2019", y: 130},
+{ label: "2018", y: 0},
+{ label: "2017", y: 0}
 ]
             }
           ]
@@ -257,7 +243,7 @@
                                 document.write(new Date().getFullYear());
                               </script></span> &bullet;
                     </div>
-                    <h2>Relatorio TEXTO AEHO 12312312321321</h2>
+                    <h2>Relatório referente as recorrências de acessos a arquivos expecificos</h2>
     <div id="chartContainer6" style="height: 300px; width: 100%;"></div>
                   </div>
                 </a>
@@ -266,19 +252,16 @@
       window.addEventListener('load', function() {
         var chartContainer6 = new CanvasJS.Chart("chartContainer6", {
           title: {
-            text: "Relatorio HTTP Code Responses6"
+            text: "Relatorio sobre os Arquivos mais acessados"
           },
           data: [
             {
               type: "bar",
               dataPoints: [ 
-{ label: "HTTP Code: 400", y: 0},
-{ label: "HTTP Code: 0", y: 22},
-{ label: "HTTP Code: 1", y: 12},
-{ label: "HTTP Code: 403", y: 0},
-{ label: "HTTP Code: 404", y: 16},
-{ label: "HTTP Code: 500", y: 0},
-{ label: "HTTP Code: 200", y: 105}
+{ label: "index.html", y: 40},
+{ label: "imgtest.jpg", y: 5},
+{ label: "404.html", y: 10},
+{ label: "relatorios.html", y: 60}
 ]
             }
           ]
@@ -296,7 +279,7 @@
                                 document.write(new Date().getFullYear());
                               </script></span> &bullet;
                     </div>
-                    <h2>Relatorio TEXTO AEHO 12312312321321</h2>
+                    <h2>Relatório referente ao tempo decorrido para cada resposta</h2>
     <div id="chartContainer7" style="height: 300px; width: 100%;"></div>
                   </div>
                 </a>
@@ -305,19 +288,16 @@
       window.addEventListener('load', function() {
         var chartContainer7 = new CanvasJS.Chart("chartContainer7", {
           title: {
-            text: "Relatorio HTTP Code Responses6"
+            text: "Relatorio sobre o tempo de resposta de cada acesso"
           },
           data: [
             {
               type: "bar",
               dataPoints: [ 
-{ label: "HTTP Code: 400", y: 0},
-{ label: "HTTP Code: 0", y: 22},
-{ label: "HTTP Code: 1", y: 12},
-{ label: "HTTP Code: 403", y: 0},
-{ label: "HTTP Code: 404", y: 16},
-{ label: "HTTP Code: 500", y: 0},
-{ label: "HTTP Code: 200", y: 105}
+{ label: " <= 15ms", y: 50},
+{ label: ">200ms", y: 10},
+{ label: ">15ms E <= 60ms", y: 25},
+{ label: ">60ms E <= 200ms", y: 15}
 ]
             }
           ]
@@ -335,7 +315,7 @@
                                 document.write(new Date().getFullYear());
                               </script></span> &bullet;
                     </div>
-                    <h2>Relatorio TEXTO AEHO 12312312321321</h2>
+                    <h2>Relatório referente ao tempo gasto na aplicação por cada usuário</h2>
     <div id="chartContainer8" style="height: 300px; width: 100%;"></div>
                   </div>
                 </a>
@@ -344,19 +324,15 @@
       window.addEventListener('load', function() {
         var chartContainer8 = new CanvasJS.Chart("chartContainer8", {
           title: {
-            text: "Relatorio HTTP Code Responses6"
+            text: "Relatorio sobre o Tempo gasto em cada acesso"
           },
           data: [
             {
               type: "bar",
               dataPoints: [ 
-{ label: "HTTP Code: 400", y: 0},
-{ label: "HTTP Code: 0", y: 22},
-{ label: "HTTP Code: 1", y: 12},
-{ label: "HTTP Code: 403", y: 0},
-{ label: "HTTP Code: 404", y: 16},
-{ label: "HTTP Code: 500", y: 0},
-{ label: "HTTP Code: 200", y: 105}
+{ label: "Por Horas", y: 1},
+{ label: "Por Minutos", y: 24},
+{ label: "Por Segundos", y: 105}
 ]
             }
           ]
@@ -374,7 +350,7 @@
                                 document.write(new Date().getFullYear());
                               </script></span> &bullet;
                     </div>
-                    <h2>Relatorio TEXTO AEHO 12312312321321</h2>
+                    <h2>Relatório referente aos IP's de origem que mais acessam a aplicão</h2>
     <div id="chartContainer9" style="height: 300px; width: 100%;"></div>
                   </div>
                 </a>
@@ -383,19 +359,13 @@
       window.addEventListener('load', function() {
         var chartContainer9 = new CanvasJS.Chart("chartContainer9", {
           title: {
-            text: "Relatorio HTTP Code Responses6"
+            text: "Relatorio sobre os IP's que mais acessão"
           },
           data: [
             {
               type: "bar",
               dataPoints: [ 
-{ label: "HTTP Code: 400", y: 0},
-{ label: "HTTP Code: 0", y: 22},
-{ label: "HTTP Code: 1", y: 12},
-{ label: "HTTP Code: 403", y: 0},
-{ label: "HTTP Code: 404", y: 16},
-{ label: "HTTP Code: 500", y: 0},
-{ label: "HTTP Code: 200", y: 105}
+{ label: "127.0.0.1", y: 130}
 ]
             }
           ]
@@ -413,7 +383,7 @@
                                 document.write(new Date().getFullYear());
                               </script></span> &bullet;
                     </div>
-                    <h2>Relatorio TEXTO AEHO 12312312321321</h2>
+                    <h2>Relatório referente as futuras notas dos integrantes do grupo</h2>
     <div id="chartContainer10" style="height: 300px; width: 100%;"></div>
                   </div>
                 </a>
@@ -422,19 +392,17 @@
       window.addEventListener('load', function() {
         var chartContainer10 = new CanvasJS.Chart("chartContainer10", {
           title: {
-            text: "Relatorio HTTP Code Responses6"
+            text: "Relatorio sobre as notas merecidas pelos integrantes"
           },
           data: [
             {
               type: "bar",
               dataPoints: [ 
-{ label: "HTTP Code: 400", y: 0},
-{ label: "HTTP Code: 0", y: 22},
-{ label: "HTTP Code: 1", y: 12},
-{ label: "HTTP Code: 403", y: 0},
-{ label: "HTTP Code: 404", y: 16},
-{ label: "HTTP Code: 500", y: 0},
-{ label: "HTTP Code: 200", y: 105}
+{ label: "Leonardo", y: 100},
+{ label: "Rafaela", y: 100},
+{ label: "Bruno", y: 100},
+{ label: "Pedro", y: 100},
+{ label: "Kaio", y: 100}
 ]
             }
           ]
@@ -521,5 +489,6 @@
     <script src="http://localhost:8080/js/jquery.stellar.min.js"></script>
     <script src="http://localhost:8080/js/main.js"></script>
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="js/relatorios.js"> </script>  
   </body>
 </html>

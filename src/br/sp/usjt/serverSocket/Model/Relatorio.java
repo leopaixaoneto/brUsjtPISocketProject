@@ -70,10 +70,10 @@ public class Relatorio {
 
         for(Map.Entry<?, Integer> pair : map.entrySet()){
             if(cont < map.entrySet().size()) {
-                finalCode += "{ label: \"HTTP Code: " + pair.getKey() + "\", y: " + pair.getValue() + "},\n";
+                finalCode += "{ label: \"" + pair.getKey() + "\", y: " + pair.getValue() + "},\n";
                 cont++;
             }else{
-                finalCode += "{ label: \"HTTP Code: " + pair.getKey() + "\", y: " + pair.getValue() + "}\n";
+                finalCode += "{ label: \"" + pair.getKey() + "\", y: " + pair.getValue() + "}\n";
             }
         }
 

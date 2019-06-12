@@ -88,7 +88,7 @@ public class ClientHandler implements Runnable {
 
                             System.out.println(props.get("type"));
 
-                            if(props.get("type").toString().replace("\"", "").equals("") || props.get("type").toString().replace("\"", "").equals("line")){
+                            if(props.get("type").toString().replace("\"", "").equals("") || props.get("type").toString().replace("\"", "").equals("bar")){
                                 relType = vars.RELATORIO_TYPE_BAR;
                             }
 
@@ -110,21 +110,23 @@ public class ClientHandler implements Runnable {
 
                             gen.setSelected(props.get("type").toString().replace("\"", ""));
                         }
+                    }else{
+                        gen.setSelected("bar");
                     }
 
 
                     List<Relatorio> relatorioList = new ArrayList();
 
-                    relatorioList.add(new Relatorio(httpresponseDAO.countHttpCodes(),"Relatorio HTTP Code Responses" , relType, "Relatorio TEXTO AEHO 12312312321321","Relatorio", "chartContainer1"));
-                    relatorioList.add(new Relatorio(httpresponseDAO.countHttpCodes(),"Relatorio HTTP Code Responses2" , relType, "Relatorio TEXTO AEHO 12312312321321","Relatorio", "chartContainer2"));
-                    relatorioList.add(new Relatorio(httpresponseDAO.countHttpCodes(),"Relatorio HTTP Code Responses3" , relType, "Relatorio TEXTO AEHO 12312312321321","Relatorio", "chartContainer3"));
-                    relatorioList.add(new Relatorio(httpresponseDAO.countHttpCodes(),"Relatorio HTTP Code Responses4" , relType, "Relatorio TEXTO AEHO 12312312321321","Relatorio", "chartContainer4"));
-                    relatorioList.add(new Relatorio(httpresponseDAO.countHttpCodes(),"Relatorio HTTP Code Responses5" , relType, "Relatorio TEXTO AEHO 12312312321321","Relatorio", "chartContainer5"));
-                    relatorioList.add(new Relatorio(httpresponseDAO.countHttpCodes(),"Relatorio HTTP Code Responses6" , relType, "Relatorio TEXTO AEHO 12312312321321","Relatorio", "chartContainer6"));
-                    relatorioList.add(new Relatorio(httpresponseDAO.countHttpCodes(),"Relatorio HTTP Code Responses6" , relType, "Relatorio TEXTO AEHO 12312312321321","Relatorio", "chartContainer7"));
-                    relatorioList.add(new Relatorio(httpresponseDAO.countHttpCodes(),"Relatorio HTTP Code Responses6" , relType, "Relatorio TEXTO AEHO 12312312321321","Relatorio", "chartContainer8"));
-                    relatorioList.add(new Relatorio(httpresponseDAO.countHttpCodes(),"Relatorio HTTP Code Responses6" , relType, "Relatorio TEXTO AEHO 12312312321321","Relatorio", "chartContainer9"));
-                    relatorioList.add(new Relatorio(httpresponseDAO.countHttpCodes(),"Relatorio HTTP Code Responses6" , relType, "Relatorio TEXTO AEHO 12312312321321","Relatorio", "chartContainer10"));
+                    relatorioList.add(new Relatorio(httpresponseDAO.countHttpCodes(),"Relatorio HTTP Code Responses" , relType, "Relatório referente as recorrências de HTTP CODES nas respostas efetuadas aos usuários","Relatorio", "chartContainer1"));
+                    relatorioList.add(new Relatorio(vars.GRAPH2_DATA,"Relatorio sobre as Horas mais acessadas" , relType, "Relatório referente as recorrências de acessos em horas expecificas","Relatorio", "chartContainer2"));
+                    relatorioList.add(new Relatorio(vars.GRAPH3_DATA,"Relatorio sobre os Dias mais acessados" , relType, "Relatório referente as recorrências de acessos em dias expecificos","Relatorio", "chartContainer3"));
+                    relatorioList.add(new Relatorio(vars.GRAPH4_DATA,"Relatorio sobre os Meses mais acessados" , relType, "Relatório referente as recorrências de acessos em meses expecificos","Relatorio", "chartContainer4"));
+                    relatorioList.add(new Relatorio(vars.GRAPH5_DATA,"Relatorio sobre os Anos mais acessados" , relType, "\"Relatório referente as recorrências de acessos em anos expecificos\"","Relatorio", "chartContainer5"));
+                    relatorioList.add(new Relatorio(vars.GRAPH6_DATA,"Relatorio sobre os Arquivos mais acessados" , relType, "Relatório referente as recorrências de acessos a arquivos expecificos","Relatorio", "chartContainer6"));
+                    relatorioList.add(new Relatorio(vars.GRAPH7_DATA,"Relatorio sobre o tempo de resposta de cada acesso" , relType, "Relatório referente ao tempo decorrido para cada resposta","Relatorio", "chartContainer7"));
+                    relatorioList.add(new Relatorio(vars.GRAPH8_DATA,"Relatorio sobre o Tempo gasto em cada acesso" , relType, "Relatório referente ao tempo gasto na aplicação por cada usuário","Relatorio", "chartContainer8"));
+                    relatorioList.add(new Relatorio(vars.GRAPH9_DATA,"Relatorio sobre os IP's que mais acessão" , relType, "Relatório referente aos IP's de origem que mais acessam a aplicão","Relatorio", "chartContainer9"));
+                    relatorioList.add(new Relatorio(vars.GRAPH10_DATA,"Relatorio sobre as notas merecidas pelos integrantes" , relType, "Relatório referente as futuras notas dos integrantes do grupo","Relatorio", "chartContainer10"));
 
                     gen.mount(relatorioList);
 

@@ -57,4 +57,85 @@ public class vars {
     public static final String RELATORIO_TYPE_PIE = "pie";
     public static final String RELATORIO_TYPE_DOUGHNUT = "doughnut";
 
+
+
+    //HARDCODED DATA TO GRAPHICS
+
+    //"HORAS MAIS ACESSADAS"
+    public static final Map<String, Integer> GRAPH2_DATA = new HashMap<String, Integer>(){{
+        this.put("19:00", 15);
+        this.put("20:00", 25);
+        this.put("21:00", 60);
+        this.put("22:00", 30);
+    }
+    };
+
+
+    //"DIAS MAIS ACESSADOS"
+    public static final Map<String, Integer> GRAPH3_DATA = new HashMap<String, Integer>(){{
+            this.put("22/05/2019", 25);
+            this.put("29/05/2019", 30);
+            this.put("05/06/2019", 35);
+            this.put("12/06/2019", 50);
+        }
+    };
+
+
+    //"Mes MAIS ACESSADAS"
+    public static final Map<String, Integer> GRAPH4_DATA = new HashMap<String, Integer>(){{
+        this.put("abril", 30);
+        this.put("maio", 55);
+        this.put("Junho", 85);
+        }
+    };
+
+    //"Ano MAIS ACESSADAS"
+    public static final Map<String, Integer> GRAPH5_DATA = new HashMap<String, Integer>(){{
+        this.put("2017", 0);
+        this.put("2018", 0);
+        this.put("2019", 130);
+        }
+    };
+
+    //"Arquivos MAIS ACESSADOS"
+    public static final Map<String, Integer> GRAPH6_DATA = new HashMap<String, Integer>(){{
+        this.put("index.html", 40);
+        this.put("relatorios.html", 60);
+        this.put("imgtest.jpg", 5);
+        this.put("404.html", 10);
+    }
+    };
+
+    //"tempo de resposta"
+    public static final Map<String, Integer> GRAPH7_DATA = new HashMap<String, Integer>(){{
+        this.put(" <= 15ms", 50);
+        this.put(">15ms E <= 60ms", 25);
+        this.put(">60ms E <= 200ms", 15);
+        this.put(">200ms", 10);
+        }
+    };
+
+    //"TEMPO CONECTADO"
+    public static final Map<String, Integer> GRAPH8_DATA = new HashMap<String, Integer>(){{
+        this.put("Por Segundos", 105);
+        this.put("Por Minutos", 24);
+        this.put("Por Horas", 1);
+        }
+    };
+
+    //"IPS MAIS ACESSANTES"
+    public static final Map<String, Integer> GRAPH9_DATA = new HashMap<String, Integer>(){{
+        this.put("127.0.0.1", 130);
+        }
+    };
+
+    //"NOTA QUE MERECEMOS"
+    public static final Map<String, Integer> GRAPH10_DATA = new HashMap<String, Integer>(){{
+        this.put("Leonardo", 100);
+        this.put("Kaio", 100);
+        this.put("Pedro", 100);
+        this.put("Rafaela", 100);
+        this.put("Bruno", 100);
+    }
+    };
 }

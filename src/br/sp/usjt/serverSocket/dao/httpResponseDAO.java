@@ -111,9 +111,9 @@ public class httpResponseDAO extends simpleDAO {
     }
 
 
-    public Map<Integer, Integer> countHttpCodes(){
+    public Map<String, Integer> countHttpCodes(){
 
-        Map<Integer, Integer> mapCount = new HashMap<>();
+        Map<String, Integer> mapCount = new HashMap<>();
 
         try{
             for(Map.Entry<Integer, String> pair : vars.HTTP_CODE_MEANING.entrySet()){
@@ -123,7 +123,7 @@ public class httpResponseDAO extends simpleDAO {
                 ResultSet rs = statement.executeQuery();
 
                 while(rs.next()){
-                    mapCount.put(pair.getKey(), rs.getInt("COUNT(httpCode)"));
+                    mapCount.put("HTTP CODE: " + pair.getKey(), rs.getInt("COUNT(httpCode)"));
                 }
             }
 
