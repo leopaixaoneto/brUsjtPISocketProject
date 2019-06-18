@@ -44,6 +44,7 @@ public class httpResponseDAO extends simpleDAO {
             e.printStackTrace();
         }
     }
+
     public List<httpResponse> getAll(){
         List<httpResponse> httpResponseList = new ArrayList<httpResponse>();
 
