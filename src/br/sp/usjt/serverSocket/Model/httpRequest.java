@@ -3,6 +3,9 @@ package br.sp.usjt.serverSocket.Model;
 import br.sp.usjt.serverSocket.Utils.jsonBuilder;
 import com.google.gson.JsonObject;
 
+import java.net.Inet4Address;
+import java.net.InetAddress;
+import java.net.InetSocketAddress;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.StringTokenizer;

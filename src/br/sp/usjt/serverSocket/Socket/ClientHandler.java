@@ -64,7 +64,8 @@ public class ClientHandler implements Runnable {
             //data Out / files
             dataOut = new BufferedOutputStream(connection.getOutputStream());
 
-            httpRequest requisicao = new httpRequest(in.readLine(), connection.getRemoteSocketAddress().toString().replace("/", ""));
+
+            httpRequest requisicao = new httpRequest(in.readLine(), connection.getInetAddress().getHostAddress().replace("/", ""));
 
             httpResponse response = null;
 
@@ -117,16 +118,17 @@ public class ClientHandler implements Runnable {
 
                     List<Relatorio> relatorioList = new ArrayList();
 
+                    /* OK */
                     relatorioList.add(new Relatorio(httpresponseDAO.countHttpCodes(),"Relatorio HTTP Code Responses" , relType, "Relatório referente as recorrências de HTTP CODES nas respostas efetuadas aos usuários","Relatorio", "chartContainer1"));
-                    relatorioList.add(new Relatorio(vars.GRAPH2_DATA,"Relatorio sobre as Horas mais acessadas" , relType, "Relatório referente as recorrências de acessos em horas expecificas","Relatorio", "chartContainer2"));
-                    relatorioList.add(new Relatorio(vars.GRAPH3_DATA,"Relatorio sobre os Dias mais acessados" , relType, "Relatório referente as recorrências de acessos em dias expecificos","Relatorio", "chartContainer3"));
-                    relatorioList.add(new Relatorio(vars.GRAPH4_DATA,"Relatorio sobre os Meses mais acessados" , relType, "Relatório referente as recorrências de acessos em meses expecificos","Relatorio", "chartContainer4"));
-                    relatorioList.add(new Relatorio(vars.GRAPH5_DATA,"Relatorio sobre os Anos mais acessados" , relType, "\"Relatório referente as recorrências de acessos em anos expecificos\"","Relatorio", "chartContainer5"));
-                    relatorioList.add(new Relatorio(vars.GRAPH6_DATA,"Relatorio sobre os Arquivos mais acessados" , relType, "Relatório referente as recorrências de acessos a arquivos expecificos","Relatorio", "chartContainer6"));
-                    relatorioList.add(new Relatorio(vars.GRAPH7_DATA,"Relatorio sobre o tempo de resposta de cada acesso" , relType, "Relatório referente ao tempo decorrido para cada resposta","Relatorio", "chartContainer7"));
-                    relatorioList.add(new Relatorio(vars.GRAPH8_DATA,"Relatorio sobre o Tempo gasto em cada acesso" , relType, "Relatório referente ao tempo gasto na aplicação por cada usuário","Relatorio", "chartContainer8"));
-                    relatorioList.add(new Relatorio(vars.GRAPH9_DATA,"Relatorio sobre os IP's que mais acessão" , relType, "Relatório referente aos IP's de origem que mais acessam a aplicão","Relatorio", "chartContainer9"));
-                    relatorioList.add(new Relatorio(vars.GRAPH10_DATA,"Relatorio sobre as notas merecidas pelos integrantes" , relType, "Relatório referente as futuras notas dos integrantes do grupo","Relatorio", "chartContainer10"));
+                    relatorioList.add(new Relatorio(httpresponseDAO.countContentTypeResponses(),"Relatorio sobre o tipo de contentTypes mais acessados" , relType, "Relatório referente ao mais requisitados ContentType","Relatorio", "chartContainer2"));
+                    relatorioList.add(new Relatorio(httpresponseDAO.countMostAccessedFiles(),"Relatorio sobre os Arquivos mais acessados" , relType, "Relatório referente as recorrências de acessos a arquivos expecificos","Relatorio", "chartContainer3"));
+                    relatorioList.add(new Relatorio(httpresponseDAO.countMostAccess(httpResponseDAO.COUNT_DAY),"Relatorio sobre os Dias mais acessados" , relType, "Relatório referente as recorrências de acessos em dias expecificos","Relatorio", "chartContainer4"));
+                    relatorioList.add(new Relatorio(httpresponseDAO.countMostAccess(httpResponseDAO.COUNT_MONTH),"Relatorio sobre os Meses mais acessados" , relType, "Relatório referente as recorrências de acessos em meses expecificos","Relatorio", "chartContainer5"));
+                    relatorioList.add(new Relatorio(httpresponseDAO.countMostAccess(httpResponseDAO.COUNT_YEAR),"Relatorio sobre os Anos mais acessados" , relType, "\"Relatório referente as recorrências de acessos em anos expecificos\"","Relatorio", "chartContainer6"));
+                    relatorioList.add(new Relatorio(httpresponseDAO.countMostAccess(httpResponseDAO.COUNT_HOUR),"Relatorio sobre as Horas mais acessadas" , relType, "Relatório referente as recorrências de acessos em horas expecificas","Relatorio", "chartContainer7"));
+                    relatorioList.add(new Relatorio(httpresponseDAO.countMostAccess(httpResponseDAO.COUNT_UPTIME),"Relatorio sobre o upTime do servidor" , relType, "Relatório referente ao tempo que o servidor permanece Ligado ou Desligado","Relatorio", "chartContainer8"));
+                    relatorioList.add(new Relatorio(httpresponseDAO.countDiferenceBetweenMonth(6),"Relatorio sobre diferença de acesso aos meses de Junho" , relType, "Relatório referente a diferença no número de acessos no mes de Junho(Comparativo aos anos)","Relatorio", "chartContainer9"));
+                    relatorioList.add(new Relatorio(httpresponseDAO.countDiferenceBetweenMonth(5),"Relatorio sobre diferenças de acesso aos meses de Maio" , relType, "Relatório referente a diferença no número de acessos no mes de Maio(Comparativo aos anos)","Relatorio", "chartContainer10"));
 
                     gen.mount(relatorioList);
 

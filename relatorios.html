@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="http://localhost:8080/css/style.css">
 
   </head>
-  <body selectedIndex = "bar">
+  <body selectedIndex = "column">
     <header role="banner">
       <div class="top-bar">
         <div class="container"></div>
@@ -57,8 +57,8 @@
                     <div class="post-meta">
                       <span class="category">Relatorio</span>
                       <span class="mr-2"><script>
-                                document.write(new Date().getDay() + "/");
-                                document.write(new Date().getMonth() + "/");
+                                document.write(new Date().getDate() + "/");
+                                document.write(new Date().getMonth()+1 + "/");
                                 document.write(new Date().getFullYear());
                               </script></span> &bullet;
                     </div>
@@ -75,15 +75,15 @@
           },
           data: [
             {
-              type: "bar",
+              type: "column",
               dataPoints: [ 
-{ label: "HTTP CODE: 500", y: 0},
 { label: "HTTP CODE: 400", y: 0},
-{ label: "HTTP CODE: 0", y: 2},
-{ label: "HTTP CODE: 404", y: 65},
-{ label: "HTTP CODE: 1", y: 1},
+{ label: "HTTP CODE: 0", y: 5},
+{ label: "HTTP CODE: 1", y: 2},
 { label: "HTTP CODE: 403", y: 0},
-{ label: "HTTP CODE: 200", y: 66}
+{ label: "HTTP CODE: 404", y: 0},
+{ label: "HTTP CODE: 500", y: 0},
+{ label: "HTTP CODE: 200", y: 84}
 ]
             }
           ]
@@ -96,12 +96,12 @@
                     <div class="post-meta">
                       <span class="category">Relatorio</span>
                       <span class="mr-2"><script>
-                                document.write(new Date().getDay() + "/");
-                                document.write(new Date().getMonth() + "/");
+                                document.write(new Date().getDate() + "/");
+                                document.write(new Date().getMonth()+1 + "/");
                                 document.write(new Date().getFullYear());
                               </script></span> &bullet;
                     </div>
-                    <h2>Relatório referente as recorrências de acessos em horas expecificas</h2>
+                    <h2>Relatório referente ao mais requisitados ContentType</h2>
     <div id="chartContainer2" style="height: 300px; width: 100%;"></div>
                   </div>
                 </a>
@@ -110,16 +110,16 @@
       window.addEventListener('load', function() {
         var chartContainer2 = new CanvasJS.Chart("chartContainer2", {
           title: {
-            text: "Relatorio sobre as Horas mais acessadas"
+            text: "Relatorio sobre o tipo de contentTypes mais acessados"
           },
           data: [
             {
-              type: "bar",
+              type: "column",
               dataPoints: [ 
-{ label: "22:00", y: 30},
-{ label: "20:00", y: 25},
-{ label: "21:00", y: 60},
-{ label: "19:00", y: 15}
+{ label: "server/stateChange", y: 7},
+{ label: "text/html", y: 12},
+{ label: "text/javascript", y: 24},
+{ label: "text/css", y: 48}
 ]
             }
           ]
@@ -132,12 +132,12 @@
                     <div class="post-meta">
                       <span class="category">Relatorio</span>
                       <span class="mr-2"><script>
-                                document.write(new Date().getDay() + "/");
-                                document.write(new Date().getMonth() + "/");
+                                document.write(new Date().getDate() + "/");
+                                document.write(new Date().getMonth()+1 + "/");
                                 document.write(new Date().getFullYear());
                               </script></span> &bullet;
                     </div>
-                    <h2>Relatório referente as recorrências de acessos em dias expecificos</h2>
+                    <h2>Relatório referente as recorrências de acessos a arquivos expecificos</h2>
     <div id="chartContainer3" style="height: 300px; width: 100%;"></div>
                   </div>
                 </a>
@@ -146,16 +146,21 @@
       window.addEventListener('load', function() {
         var chartContainer3 = new CanvasJS.Chart("chartContainer3", {
           title: {
-            text: "Relatorio sobre os Dias mais acessados"
+            text: "Relatorio sobre os Arquivos mais acessados"
           },
           data: [
             {
-              type: "bar",
+              type: "column",
               dataPoints: [ 
-{ label: "05/06/2019", y: 35},
-{ label: "12/06/2019", y: 50},
-{ label: "22/05/2019", y: 25},
-{ label: "29/05/2019", y: 30}
+{ label: "Servidor finalizado", y: 2},
+{ label: "Servidor Iniciado", y: 5},
+{ label: "\js\relatorios.js", y: 12},
+{ label: "\relatorios.html", y: 12},
+{ label: "\css\bootstrap.css", y: 12},
+{ label: "\css\animate.css", y: 12},
+{ label: "\fonts\flaticon\font\flaticon.css", y: 12},
+{ label: "\css\style.css", y: 12},
+{ label: "\js\main.js", y: 12}
 ]
             }
           ]
@@ -168,12 +173,12 @@
                     <div class="post-meta">
                       <span class="category">Relatorio</span>
                       <span class="mr-2"><script>
-                                document.write(new Date().getDay() + "/");
-                                document.write(new Date().getMonth() + "/");
+                                document.write(new Date().getDate() + "/");
+                                document.write(new Date().getMonth()+1 + "/");
                                 document.write(new Date().getFullYear());
                               </script></span> &bullet;
                     </div>
-                    <h2>Relatório referente as recorrências de acessos em meses expecificos</h2>
+                    <h2>Relatório referente as recorrências de acessos em dias expecificos</h2>
     <div id="chartContainer4" style="height: 300px; width: 100%;"></div>
                   </div>
                 </a>
@@ -182,15 +187,13 @@
       window.addEventListener('load', function() {
         var chartContainer4 = new CanvasJS.Chart("chartContainer4", {
           title: {
-            text: "Relatorio sobre os Meses mais acessados"
+            text: "Relatorio sobre os Dias mais acessados"
           },
           data: [
             {
-              type: "bar",
+              type: "column",
               dataPoints: [ 
-{ label: "abril", y: 30},
-{ label: "Junho", y: 85},
-{ label: "maio", y: 55}
+{ label: "18", y: 91}
 ]
             }
           ]
@@ -203,12 +206,12 @@
                     <div class="post-meta">
                       <span class="category">Relatorio</span>
                       <span class="mr-2"><script>
-                                document.write(new Date().getDay() + "/");
-                                document.write(new Date().getMonth() + "/");
+                                document.write(new Date().getDate() + "/");
+                                document.write(new Date().getMonth()+1 + "/");
                                 document.write(new Date().getFullYear());
                               </script></span> &bullet;
                     </div>
-                    <h2>"Relatório referente as recorrências de acessos em anos expecificos"</h2>
+                    <h2>Relatório referente as recorrências de acessos em meses expecificos</h2>
     <div id="chartContainer5" style="height: 300px; width: 100%;"></div>
                   </div>
                 </a>
@@ -217,15 +220,14 @@
       window.addEventListener('load', function() {
         var chartContainer5 = new CanvasJS.Chart("chartContainer5", {
           title: {
-            text: "Relatorio sobre os Anos mais acessados"
+            text: "Relatorio sobre os Meses mais acessados"
           },
           data: [
             {
-              type: "bar",
+              type: "column",
               dataPoints: [ 
-{ label: "2019", y: 130},
-{ label: "2018", y: 0},
-{ label: "2017", y: 0}
+{ label: "Maio", y: 14},
+{ label: "Junho", y: 77}
 ]
             }
           ]
@@ -238,12 +240,12 @@
                     <div class="post-meta">
                       <span class="category">Relatorio</span>
                       <span class="mr-2"><script>
-                                document.write(new Date().getDay() + "/");
-                                document.write(new Date().getMonth() + "/");
+                                document.write(new Date().getDate() + "/");
+                                document.write(new Date().getMonth()+1 + "/");
                                 document.write(new Date().getFullYear());
                               </script></span> &bullet;
                     </div>
-                    <h2>Relatório referente as recorrências de acessos a arquivos expecificos</h2>
+                    <h2>"Relatório referente as recorrências de acessos em anos expecificos"</h2>
     <div id="chartContainer6" style="height: 300px; width: 100%;"></div>
                   </div>
                 </a>
@@ -252,16 +254,14 @@
       window.addEventListener('load', function() {
         var chartContainer6 = new CanvasJS.Chart("chartContainer6", {
           title: {
-            text: "Relatorio sobre os Arquivos mais acessados"
+            text: "Relatorio sobre os Anos mais acessados"
           },
           data: [
             {
-              type: "bar",
+              type: "column",
               dataPoints: [ 
-{ label: "index.html", y: 40},
-{ label: "imgtest.jpg", y: 5},
-{ label: "404.html", y: 10},
-{ label: "relatorios.html", y: 60}
+{ label: "2018", y: 14},
+{ label: "2019", y: 77}
 ]
             }
           ]
@@ -274,12 +274,12 @@
                     <div class="post-meta">
                       <span class="category">Relatorio</span>
                       <span class="mr-2"><script>
-                                document.write(new Date().getDay() + "/");
-                                document.write(new Date().getMonth() + "/");
+                                document.write(new Date().getDate() + "/");
+                                document.write(new Date().getMonth()+1 + "/");
                                 document.write(new Date().getFullYear());
                               </script></span> &bullet;
                     </div>
-                    <h2>Relatório referente ao tempo decorrido para cada resposta</h2>
+                    <h2>Relatório referente as recorrências de acessos em horas expecificas</h2>
     <div id="chartContainer7" style="height: 300px; width: 100%;"></div>
                   </div>
                 </a>
@@ -288,16 +288,13 @@
       window.addEventListener('load', function() {
         var chartContainer7 = new CanvasJS.Chart("chartContainer7", {
           title: {
-            text: "Relatorio sobre o tempo de resposta de cada acesso"
+            text: "Relatorio sobre as Horas mais acessadas"
           },
           data: [
             {
-              type: "bar",
+              type: "column",
               dataPoints: [ 
-{ label: " <= 15ms", y: 50},
-{ label: ">200ms", y: 10},
-{ label: ">15ms E <= 60ms", y: 25},
-{ label: ">60ms E <= 200ms", y: 15}
+{ label: "5:00 ~ 5:59", y: 91}
 ]
             }
           ]
@@ -310,12 +307,12 @@
                     <div class="post-meta">
                       <span class="category">Relatorio</span>
                       <span class="mr-2"><script>
-                                document.write(new Date().getDay() + "/");
-                                document.write(new Date().getMonth() + "/");
+                                document.write(new Date().getDate() + "/");
+                                document.write(new Date().getMonth()+1 + "/");
                                 document.write(new Date().getFullYear());
                               </script></span> &bullet;
                     </div>
-                    <h2>Relatório referente ao tempo gasto na aplicação por cada usuário</h2>
+                    <h2>Relatório referente ao tempo que o servidor permanece Ligado ou Desligado</h2>
     <div id="chartContainer8" style="height: 300px; width: 100%;"></div>
                   </div>
                 </a>
@@ -324,15 +321,14 @@
       window.addEventListener('load', function() {
         var chartContainer8 = new CanvasJS.Chart("chartContainer8", {
           title: {
-            text: "Relatorio sobre o Tempo gasto em cada acesso"
+            text: "Relatorio sobre o upTime do servidor"
           },
           data: [
             {
-              type: "bar",
+              type: "column",
               dataPoints: [ 
-{ label: "Por Horas", y: 1},
-{ label: "Por Minutos", y: 24},
-{ label: "Por Segundos", y: 105}
+{ label: "On (%)", y: 61},
+{ label: "Off (%)", y: 38}
 ]
             }
           ]
@@ -345,8 +341,8 @@
                     <div class="post-meta">
                       <span class="category">Relatorio</span>
                       <span class="mr-2"><script>
-                                document.write(new Date().getDay() + "/");
-                                document.write(new Date().getMonth() + "/");
+                                document.write(new Date().getDate() + "/");
+                                document.write(new Date().getMonth()+1 + "/");
                                 document.write(new Date().getFullYear());
                               </script></span> &bullet;
                     </div>
@@ -363,9 +359,10 @@
           },
           data: [
             {
-              type: "bar",
+              type: "column",
               dataPoints: [ 
-{ label: "127.0.0.1", y: 130}
+{ label: "2018", y: 7},
+{ label: "2019", y: 84}
 ]
             }
           ]
@@ -378,12 +375,12 @@
                     <div class="post-meta">
                       <span class="category">Relatorio</span>
                       <span class="mr-2"><script>
-                                document.write(new Date().getDay() + "/");
-                                document.write(new Date().getMonth() + "/");
+                                document.write(new Date().getDate() + "/");
+                                document.write(new Date().getMonth()+1 + "/");
                                 document.write(new Date().getFullYear());
                               </script></span> &bullet;
                     </div>
-                    <h2>Relatório referente as futuras notas dos integrantes do grupo</h2>
+                    <h2>Relatório referente aos IP's de origem que mais acessam a aplicão</h2>
     <div id="chartContainer10" style="height: 300px; width: 100%;"></div>
                   </div>
                 </a>
@@ -392,17 +389,14 @@
       window.addEventListener('load', function() {
         var chartContainer10 = new CanvasJS.Chart("chartContainer10", {
           title: {
-            text: "Relatorio sobre as notas merecidas pelos integrantes"
+            text: "Relatorio sobre os IP's que mais acessão"
           },
           data: [
             {
-              type: "bar",
+              type: "column",
               dataPoints: [ 
-{ label: "Leonardo", y: 100},
-{ label: "Rafaela", y: 100},
-{ label: "Bruno", y: 100},
-{ label: "Pedro", y: 100},
-{ label: "Kaio", y: 100}
+{ label: "2018", y: 7},
+{ label: "2019", y: 21}
 ]
             }
           ]

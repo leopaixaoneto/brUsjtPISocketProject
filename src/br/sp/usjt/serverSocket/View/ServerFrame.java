@@ -8,6 +8,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import java.io.IOException;
 
 
@@ -90,6 +92,7 @@ public class ServerFrame extends javax.swing.JFrame {
 
 
         jButtonParar.setText("Parar");
+        jButtonParar.setEnabled(false);
         jButtonParar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
@@ -99,6 +102,7 @@ public class ServerFrame extends javax.swing.JFrame {
 
 
         jButtonReiniciar.setText("Reiniciar");
+        jButtonReiniciar.setEnabled(false);
         jButtonReiniciar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
@@ -115,6 +119,13 @@ public class ServerFrame extends javax.swing.JFrame {
             }
         });
 
+
+        this.addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent windowEvent) {
+                desligar();
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -204,20 +215,22 @@ public class ServerFrame extends javax.swing.JFrame {
 
     private void desligar(){
         //Desligando servidor / desligando a thread
-        System.out.println("pausando");
-        server.pause();
 
-        jLabelStatus.setText("INATIVO");
-        jLabelStatus.setForeground(Color.RED);
-        jButtonParar.setEnabled(false);
-        jButtonIniciar.setEnabled(true);
-        jButtonReiniciar.setEnabled(false);
+        if(jButtonParar.isEnabled()){
+            System.out.println("pausando");
+            server.pause();
+
+            jLabelStatus.setText("INATIVO");
+            jLabelStatus.setForeground(Color.RED);
+            jButtonParar.setEnabled(false);
+            jButtonIniciar.setEnabled(true);
+            jButtonReiniciar.setEnabled(false);
 
 
-        httpresponseDAO.saveServerEntry(httpResponseDAO.ENTRY_TYPE_STOP);
+            httpresponseDAO.saveServerEntry(httpResponseDAO.ENTRY_TYPE_STOP);
 
-        preencherTextArea();
-
+            preencherTextArea();
+        }
     }
 
     public void preencherTextArea(){

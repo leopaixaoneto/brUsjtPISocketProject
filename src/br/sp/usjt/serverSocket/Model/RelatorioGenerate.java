@@ -168,7 +168,9 @@ public class RelatorioGenerate {
 
         for(Relatorio r : relatorios){
             if(r != null) {
-                    System.out.println("IMPRIMIDO: " + r.getFinalCode());
+
+                //TESTING THE AUTO-GENERATED HTML CODE
+                //System.out.println("IMPRIMIDO: " + r.getFinalCode());
                     inputBuffer.append(r.getFinalCode());
             }
 

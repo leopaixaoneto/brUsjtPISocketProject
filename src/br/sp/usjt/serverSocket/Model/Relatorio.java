@@ -43,8 +43,8 @@ public class Relatorio {
 
         finalCode +=(
                 "                      <span class=\"mr-2\"><script>\n" +
-                        "                                document.write(new Date().getDay() + \"/\");\n" +
-                        "                                document.write(new Date().getMonth() + \"/\");\n" +
+                        "                                document.write(new Date().getDate() + \"/\");\n" +
+                        "                                document.write(new Date().getMonth()+1 + \"/\");\n" +
                         "                                document.write(new Date().getFullYear());\n" +
                         "                              </script></span> &bullet;\n" +
                         "                    </div>\n" +
