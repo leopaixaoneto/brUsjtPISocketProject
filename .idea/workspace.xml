@@ -2,10 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7e8ccd6-9471-4ec1-8005-7f244d23cd88" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/js/relatorios.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/relatorios.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Model/Relatorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Model/Relatorio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/br.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/br/sp/usjt/serverSocket/Model/RelatorioGenerate.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/br/sp/usjt/serverSocket/Model/RelatorioGenerate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/br/sp/usjt/serverSocket/Socket/ClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/br/sp/usjt/serverSocket/Socket/ClientHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/br/sp/usjt/serverSocket/Utils/vars$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/br/sp/usjt/serverSocket/Utils/vars$10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/br/sp/usjt/serverSocket/Utils/vars$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/br/sp/usjt/serverSocket/Utils/vars$11.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/br/sp/usjt/serverSocket/Utils/vars$12.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/br/sp/usjt/serverSocket/Utils/vars$12.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/br/sp/usjt/serverSocket/Utils/vars$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/br/sp/usjt/serverSocket/Utils/vars$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/br/sp/usjt/serverSocket/Utils/vars$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/br/sp/usjt/serverSocket/Utils/vars$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/br/sp/usjt/serverSocket/Utils/vars$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/br/sp/usjt/serverSocket/Utils/vars$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/br/sp/usjt/serverSocket/Utils/vars$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/br/sp/usjt/serverSocket/Utils/vars$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/br/sp/usjt/serverSocket/Utils/vars$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/br/sp/usjt/serverSocket/Utils/vars$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/br/sp/usjt/serverSocket/Utils/vars$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/br/sp/usjt/serverSocket/Utils/vars$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/br/sp/usjt/serverSocket/Utils/vars$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/br/sp/usjt/serverSocket/Utils/vars$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/br/sp/usjt/serverSocket/Utils/vars$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/br/sp/usjt/serverSocket/Utils/vars$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/br/sp/usjt/serverSocket/Utils/vars.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/br/sp/usjt/serverSocket/Utils/vars.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/br/sp/usjt/serverSocket/View/ServerFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/br/sp/usjt/serverSocket/View/ServerFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/br/sp/usjt/serverSocket/dao/httpResponseDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/br/sp/usjt/serverSocket/dao/httpResponseDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/relatorios.html" beforeDir="false" afterPath="$PROJECT_DIR$/relatorios.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br.rar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Model/RelatorioGenerate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Model/RelatorioGenerate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Socket/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Socket/ClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Utils/ServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Utils/ServerConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Utils/vars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Utils/vars.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/sp/usjt/serverSocket/View/ServerFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/sp/usjt/serverSocket/View/ServerFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/sp/usjt/serverSocket/dao/httpResponseDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/sp/usjt/serverSocket/dao/httpResponseDAO.java" afterDir="false" />
@@ -21,48 +42,34 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-28521958">
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="html" value="28" />
-          <entry key="java" value="5308" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="HTML" value="28" />
-          <entry key="JAVA" value="5308" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="html" value="1" />
-          <entry key="java" value="10" />
-          <entry key="jpg" value="1" />
-          <entry key="js" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="HTML" value="1" />
-          <entry key="Image" value="1" />
-          <entry key="JAVA" value="10" />
-          <entry key="JavaScript" value="2" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FavoritesManager">
     <favorites_list name="USJTServerSocket" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Socket/ClientHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="96" column="11" selection-start-line="96" selection-start-column="11" selection-end-line="96" selection-end-column="11" />
+            <state relative-caret-position="374">
+              <caret line="205" column="5" lean-forward="true" selection-start-line="205" selection-start-column="5" selection-end-line="205" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Model/httpRequest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Socket/Servidor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -70,8 +77,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Utils/ServerConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="289">
+              <caret line="17" column="32" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Utils/jsonBuilder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="42" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -79,37 +95,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/sp/usjt/serverSocket/dao/httpResponseDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="610">
-              <caret line="132" lean-forward="true" selection-start-line="132" selection-end-line="132" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/br/sp/usjt/serverSocket/View/ServerFrame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="175" lean-forward="true" selection-start-line="175" selection-end-line="175" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1587#1617#0" expanded="true" />
-                <element signature="e#2981#2982#0" expanded="true" />
-                <element signature="e#3020#3021#0" expanded="true" />
-                <element signature="e#3373#3374#0" expanded="true" />
-                <element signature="e#3415#3416#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Model/httpResponse.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+            <state relative-caret-position="241">
+              <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -117,65 +104,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Model/RelatorioGenerate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1564">
-              <caret line="157" column="21" selection-start-line="157" selection-start-column="21" selection-end-line="157" selection-end-column="21" />
-              <folding>
-                <element signature="e#7811#7812#0" expanded="true" />
-                <element signature="e#7851#7852#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1014">
+              <caret line="203" lean-forward="true" selection-start-line="203" selection-end-line="203" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/relatorios.js">
+        <entry file="file://$PROJECT_DIR$/src/br/sp/usjt/serverSocket/dao/simpleDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Model/Relatorio.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="75" column="41" selection-start-line="75" selection-start-column="41" selection-end-line="75" selection-end-column="41" />
-              <folding>
-                <element signature="e#3394#3395#0" expanded="true" />
-                <element signature="e#3426#3427#0" expanded="true" />
-                <element signature="e#3476#3477#0" expanded="true" />
-                <element signature="e#3518#3519#0" expanded="true" />
-                <element signature="e#3557#3558#0" expanded="true" />
-                <element signature="e#3583#3584#0" expanded="true" />
-                <element signature="e#3630#3631#0" expanded="true" />
-                <element signature="e#3660#3661#0" expanded="true" />
-                <element signature="e#3700#3701#0" expanded="true" />
-                <element signature="e#3736#3737#0" expanded="true" />
-                <element signature="e#3794#3795#0" expanded="true" />
-                <element signature="e#3844#3845#0" expanded="true" />
-                <element signature="e#3884#3885#0" expanded="true" />
-                <element signature="e#3920#3921#0" expanded="true" />
-                <element signature="e#3978#3979#0" expanded="true" />
-                <element signature="e#4028#4029#0" expanded="true" />
-                <element signature="e#4062#4063#0" expanded="true" />
-                <element signature="e#4092#4093#0" expanded="true" />
-                <element signature="e#4138#4139#0" expanded="true" />
-                <element signature="e#4176#4177#0" expanded="true" />
-                <element signature="e#4210#4211#0" expanded="true" />
-                <element signature="e#4240#4241#0" expanded="true" />
-                <element signature="e#4286#4287#0" expanded="true" />
-                <element signature="e#4324#4325#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-102">
-              <caret line="57" column="30" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
+            <state relative-caret-position="160">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -183,11 +122,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Utils/vars.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="624">
-              <caret line="136" column="33" lean-forward="true" selection-start-line="136" selection-start-column="33" selection-end-line="136" selection-end-column="33" />
+            <state relative-caret-position="262">
+              <caret line="67" column="30" lean-forward="true" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Model/Relatorio.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-61">
+              <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
             </state>
           </provider>
         </entry>
@@ -222,24 +170,26 @@
       <list>
         <option value="$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Utils/jsonBuilder.java" />
         <option value="$PROJECT_DIR$/src/br/sp/usjt/serverSocket/dao/simpleDAO.java" />
-        <option value="$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Socket/Servidor.java" />
         <option value="$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Main/Main.java" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Model/httpResponse.java" />
         <option value="$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Model/Relatorio.java" />
-        <option value="$PROJECT_DIR$/src/br/sp/usjt/serverSocket/dao/httpResponseDAO.java" />
-        <option value="$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Utils/vars.java" />
-        <option value="$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Socket/ClientHandler.java" />
-        <option value="$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Model/RelatorioGenerate.java" />
         <option value="$PROJECT_DIR$/js/relatorios.js" />
+        <option value="$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Model/RelatorioGenerate.java" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Utils/vars.java" />
         <option value="$PROJECT_DIR$/src/br/sp/usjt/serverSocket/View/ServerFrame.java" />
+        <option value="$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Utils/ServerConfig.java" />
+        <option value="$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Socket/Servidor.java" />
+        <option value="$PROJECT_DIR$/src/br/sp/usjt/serverSocket/dao/httpResponseDAO.java" />
+        <option value="$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Socket/ClientHandler.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1273" />
-    <option name="width" value="1294" />
-    <option name="height" value="1407" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="208" />
+    <option name="y" value="61" />
+    <option name="width" value="1721" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -247,80 +197,69 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="brUsjtPISocketProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="brUsjtPISocketProject" type="462c0819:PsiDirectoryNode" />
+              <item name="USJTServerSocket" type="b2602c69:ProjectViewProjectNode" />
+              <item name="USJTServerSocket" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="brUsjtPISocketProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="brUsjtPISocketProject" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="brUsjtPISocketProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="brUsjtPISocketProject" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="brUsjtPISocketProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="brUsjtPISocketProject" type="462c0819:PsiDirectoryNode" />
+              <item name="USJTServerSocket" type="b2602c69:ProjectViewProjectNode" />
+              <item name="USJTServerSocket" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="brUsjtPISocketProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="brUsjtPISocketProject" type="462c0819:PsiDirectoryNode" />
+              <item name="USJTServerSocket" type="b2602c69:ProjectViewProjectNode" />
+              <item name="USJTServerSocket" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="serverSocket" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="brUsjtPISocketProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="brUsjtPISocketProject" type="462c0819:PsiDirectoryNode" />
+              <item name="USJTServerSocket" type="b2602c69:ProjectViewProjectNode" />
+              <item name="USJTServerSocket" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="serverSocket" type="462c0819:PsiDirectoryNode" />
               <item name="Controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="brUsjtPISocketProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="brUsjtPISocketProject" type="462c0819:PsiDirectoryNode" />
+              <item name="USJTServerSocket" type="b2602c69:ProjectViewProjectNode" />
+              <item name="USJTServerSocket" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="serverSocket" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="brUsjtPISocketProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="brUsjtPISocketProject" type="462c0819:PsiDirectoryNode" />
+              <item name="USJTServerSocket" type="b2602c69:ProjectViewProjectNode" />
+              <item name="USJTServerSocket" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="serverSocket" type="462c0819:PsiDirectoryNode" />
               <item name="Main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="brUsjtPISocketProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="brUsjtPISocketProject" type="462c0819:PsiDirectoryNode" />
+              <item name="USJTServerSocket" type="b2602c69:ProjectViewProjectNode" />
+              <item name="USJTServerSocket" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="serverSocket" type="462c0819:PsiDirectoryNode" />
               <item name="Model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="brUsjtPISocketProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="brUsjtPISocketProject" type="462c0819:PsiDirectoryNode" />
+              <item name="USJTServerSocket" type="b2602c69:ProjectViewProjectNode" />
+              <item name="USJTServerSocket" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="serverSocket" type="462c0819:PsiDirectoryNode" />
               <item name="Socket" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="brUsjtPISocketProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="brUsjtPISocketProject" type="462c0819:PsiDirectoryNode" />
+              <item name="USJTServerSocket" type="b2602c69:ProjectViewProjectNode" />
+              <item name="USJTServerSocket" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="serverSocket" type="462c0819:PsiDirectoryNode" />
               <item name="Utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="brUsjtPISocketProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="brUsjtPISocketProject" type="462c0819:PsiDirectoryNode" />
+              <item name="USJTServerSocket" type="b2602c69:ProjectViewProjectNode" />
+              <item name="USJTServerSocket" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="serverSocket" type="462c0819:PsiDirectoryNode" />
               <item name="View" type="462c0819:PsiDirectoryNode" />
@@ -329,6 +268,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -394,10 +334,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
+    <frame x="208" y="61" width="1721" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49716446" visible="true" weight="0.08744038" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49716446" visible="true" weight="0.20704311" />
       <window_info id="Structure" order="1" sideWeight="0.5028355" side_tool="true" weight="0.17828201" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -406,12 +346,12 @@
       <window_info id="Favorites" order="6" sideWeight="0.50177306" side_tool="true" weight="0.24962293" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49841017" visible="true" weight="0.16848674" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49841017" visible="true" weight="0.2545045" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3299293" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49946293" weight="0.3299532" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49946293" weight="0.0981048" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50158983" side_tool="true" weight="0.3073323" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3299293" />
@@ -458,6 +398,33 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/imgtest.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Model/httpResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="51" column="28" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/relatorios.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="114" column="69" selection-start-line="114" selection-start-column="69" selection-end-line="114" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.css.map">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Controller/getHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -472,23 +439,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Utils/jsonBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Main/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/br/sp/usjt/serverSocket/dao/ConnectionFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -496,58 +446,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/sp/usjt/serverSocket/dao/simpleDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Main/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imgtest.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Socket/Servidor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="67" column="8" lean-forward="true" selection-start-line="67" selection-start-column="8" selection-end-line="67" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102">
-          <caret line="57" column="30" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Utils/ServerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Model/httpResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Utils/vars.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="136" column="33" lean-forward="true" selection-start-line="136" selection-start-column="33" selection-end-line="136" selection-end-column="33" />
+        <state relative-caret-position="204">
+          <caret line="12" column="56" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/sp/usjt/serverSocket/View/ServerFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="192" column="45" selection-start-line="192" selection-start-column="45" selection-end-line="192" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Model/httpRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/sp/usjt/serverSocket/dao/simpleDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/br/sp/usjt/serverSocket/dao/httpResponseDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="610">
-          <caret line="132" lean-forward="true" selection-start-line="132" selection-end-line="132" />
+        <state relative-caret-position="241">
+          <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Socket/ClientHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="205" column="5" lean-forward="true" selection-start-line="205" selection-start-column="5" selection-end-line="205" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Utils/jsonBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="42" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Utils/ServerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Utils/vars.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="67" column="30" lean-forward="true" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -556,74 +520,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Model/Relatorio.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="75" column="41" selection-start-line="75" selection-start-column="41" selection-end-line="75" selection-end-column="41" />
-          <folding>
-            <element signature="e#3394#3395#0" expanded="true" />
-            <element signature="e#3426#3427#0" expanded="true" />
-            <element signature="e#3476#3477#0" expanded="true" />
-            <element signature="e#3518#3519#0" expanded="true" />
-            <element signature="e#3557#3558#0" expanded="true" />
-            <element signature="e#3583#3584#0" expanded="true" />
-            <element signature="e#3630#3631#0" expanded="true" />
-            <element signature="e#3660#3661#0" expanded="true" />
-            <element signature="e#3700#3701#0" expanded="true" />
-            <element signature="e#3736#3737#0" expanded="true" />
-            <element signature="e#3794#3795#0" expanded="true" />
-            <element signature="e#3844#3845#0" expanded="true" />
-            <element signature="e#3884#3885#0" expanded="true" />
-            <element signature="e#3920#3921#0" expanded="true" />
-            <element signature="e#3978#3979#0" expanded="true" />
-            <element signature="e#4028#4029#0" expanded="true" />
-            <element signature="e#4062#4063#0" expanded="true" />
-            <element signature="e#4092#4093#0" expanded="true" />
-            <element signature="e#4138#4139#0" expanded="true" />
-            <element signature="e#4176#4177#0" expanded="true" />
-            <element signature="e#4210#4211#0" expanded="true" />
-            <element signature="e#4240#4241#0" expanded="true" />
-            <element signature="e#4286#4287#0" expanded="true" />
-            <element signature="e#4324#4325#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Socket/ClientHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="96" column="11" selection-start-line="96" selection-start-column="11" selection-end-line="96" selection-end-column="11" />
+        <state relative-caret-position="-61">
+          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Model/RelatorioGenerate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1564">
-          <caret line="157" column="21" selection-start-line="157" selection-start-column="21" selection-end-line="157" selection-end-column="21" />
-          <folding>
-            <element signature="e#7811#7812#0" expanded="true" />
-            <element signature="e#7851#7852#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1014">
+          <caret line="203" lean-forward="true" selection-start-line="203" selection-end-line="203" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/relatorios.js">
+    <entry file="file://$PROJECT_DIR$/src/br/sp/usjt/serverSocket/Socket/Servidor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/sp/usjt/serverSocket/View/ServerFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="175" lean-forward="true" selection-start-line="175" selection-end-line="175" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1587#1617#0" expanded="true" />
-            <element signature="e#2981#2982#0" expanded="true" />
-            <element signature="e#3020#3021#0" expanded="true" />
-            <element signature="e#3373#3374#0" expanded="true" />
-            <element signature="e#3415#3416#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="175">
+          <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
         </state>
       </provider>
     </entry>

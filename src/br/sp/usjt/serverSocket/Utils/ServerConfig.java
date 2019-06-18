@@ -16,5 +16,4 @@ public class ServerConfig {
 
 	//Porta do Servidor
 	public static final int PORT = 8080;
-	
 }

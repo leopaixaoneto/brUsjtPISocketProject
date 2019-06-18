@@ -223,7 +223,7 @@ public class ServerFrame extends javax.swing.JFrame {
     public void preencherTextArea(){
         jTextArea1.setText("");
         for(httpResponse response : httpresponseDAO.getAll()){
-            jTextArea1.setText(jTextArea1.getText() + " \n\n-" +  response.getFile().getName() + " " + response.getHttpCode() + " : " + response.getDataResposta());
+            jTextArea1.setText( " \n\n-" +  response.getFile().getName() + " " + response.getHttpCode() + " : " + response.getDataResposta() + jTextArea1.getText());
         }
     }
 

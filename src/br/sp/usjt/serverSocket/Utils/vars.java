@@ -24,6 +24,7 @@ public class vars {
         this.put(".jpeg", "image/jpeg");
         this.put(".css", "text/css");
         this.put(".js", "text/javascript");
+        this.put(".pdf", "application/pdf");
     }};
 
     public static final Map<String, String> CREATE_TABLE_QUERY = new HashMap<String, String>(){{

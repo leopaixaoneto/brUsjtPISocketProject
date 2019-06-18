@@ -37,6 +37,13 @@ public class httpResponseDAO extends simpleDAO {
 
     }
 
+    public void close(){
+        try {
+            this.conexao.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
     public List<httpResponse> getAll(){
         List<httpResponse> httpResponseList = new ArrayList<httpResponse>();
 
@@ -104,6 +111,8 @@ public class httpResponseDAO extends simpleDAO {
 
             statement.execute();
             statement.close();
+
+            System.out.println("passei por aqui!");
 
         }catch(SQLException ex){
 

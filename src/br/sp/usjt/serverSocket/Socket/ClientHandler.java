@@ -2,6 +2,7 @@ package br.sp.usjt.serverSocket.Socket;
 
 import java.io.*;
 import java.net.Socket;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -36,11 +37,11 @@ public class ClientHandler implements Runnable {
 	public void close() {
 		try {
 			this.connection.close();
-			
+			this.httpresponseDAO.close();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
 	}
 
 	@Override
@@ -72,8 +73,6 @@ public class ClientHandler implements Runnable {
             JsonObject props = requisicao.getProps();
 
             if (requisicao.getMethod().equals("GET")) {
-
-
 
                 if (requisicao.getPathFile().endsWith("/")) {
                     response = new httpResponse(ServerConfig.DEFAULT_FILE, 200);
@@ -107,6 +106,7 @@ public class ClientHandler implements Runnable {
                             if(props.get("type").toString().replace("\"", "").equals("column")){
                                 relType = vars.RELATORIO_TYPE_COLUMN;
                             }
+
 
                             gen.setSelected(props.get("type").toString().replace("\"", ""));
                         }
@@ -167,10 +167,10 @@ public class ClientHandler implements Runnable {
 
             }else if (requisicao.getMethod().equals("POST")) {
 
-
+                //TO-DO IMPLEMENT ALL
             }else if (requisicao.getMethod().equals("HEAD")) {
 
-
+                //TO-DO IMPLEMENT ALL
             }else {
 
                 if (debug) {
@@ -188,13 +188,12 @@ public class ClientHandler implements Runnable {
 
         }catch (Exception Ex) {
 
-        }finally {
-
+        }
 		    try{
 		        in.close();
                 out.close();
                 dataOut.close();
-                connection.close();
+                this.close();
 
             }catch(IOException ex){
                 System.out.println("Error closing stream : " + ex.getMessage());
@@ -204,8 +203,6 @@ public class ClientHandler implements Runnable {
                 System.out.println("Connection closed. \n");
             }
 
-        }
-			
 	}
 
 

@@ -112,7 +112,7 @@ public class RelatorioGenerate {
                 "              document.write(new Date().getFullYear());\n" +
                 "            </script>\n" +
                 "            Trabalho Projeto Interdisciplinar | Trabalho feito com o\n" +
-                "            <i class=\"fa fa-heart-o\" aria-hidden=\"true\"></i> para faculdade\n" +
+                "            <i class=\"fa fa-heart-o\" aria-hidden=\"true\"></i> coração para faculdade\n" +
                 "            <a href=\"https://www.usjt.br/\" target=\"_blank\">São Judas!</a>\n" +
                 "          </div>\n" +
                 "        </div>\n" +
